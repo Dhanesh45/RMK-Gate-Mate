@@ -1,0 +1,84 @@
+/* Container */
+.container {
+  padding: 40px;
+  background-color: EEEEEE;
+  min-height: 100vh;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: 0E4947;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Table */
+.blacky {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgb(0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.blacky thead {
+  background-color: #0f766e;
+  color: #ffffff;
+}
+
+.blacky th,
+.blacky td {
+  padding: 14px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 15px;
+}
+
+
+.blacky tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+
+.gap {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+.gun {
+  background-color: #16a34a;
+  color: white;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.gun:hover {
+  background-color: #15803d;
+}
+
+
+.bun {
+  background-color: #dc2626;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bun:hover {
+  background-color: #b91c1c;
+}
