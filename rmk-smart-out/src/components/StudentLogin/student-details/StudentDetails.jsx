@@ -31,60 +31,48 @@ const StudentDetails = () => {
             </div>
             <div className="innerframe">
                 <div className="container2">
-                    <div className="logo">
-                        <img src={RmkLogo} alt="rmklogo"></img>
-                    </div>
-                    <div className="dept">
-                        <h1 className="dept1">INFORMATION TECHNOLOGY</h1>
-                    </div>
+                    <img src={RmkLogo} width="9%" height="9%" alt="rmklogo" style={{ padding: "0.5%", border: "1px solid black" }}></img>
+                    <h1 className="dept1">INFORMATION TECHNOLOGY</h1>
                 </div>
                 <div className="title">
-                    <h2 className="title1">STUDENT DETAILS</h2>
+                    <h1 className="title1">STUDENT DETAILS</h1>
                 </div>
                 <div className="container3">
                     <div className="input">
                         <input type="text" name="name" value={details.name} placeholder="STUDENT NAME" onChange={handleNameChange} ></input>
-                    </div>
-                    <div className="input">
                         <input type="text" name="regNo" value={details.regNo} placeholder="REGISTER NUMBER" onChange={handleRegNoChange}></input>
-                    </div>
-                    <div className="input">
                         <input type="email" name="email" value={details.email} placeholder="E-MAIL-ID" onChange={handleEmailChange}></input>
-                    </div>
-                    <div className="add">
                         <button onClick={handleAdd}>ADD</button>
                     </div>
                 </div>
                 <div className="container4">
                     <div style={{ maxHeight: '300px', overflowY: 'scroll' }}>
                         <table>
-                            <div className="header">
-                                <thead>
-                                    <tr>
-                                        <th style={{ paddingRight: '180px' }}>S.NO</th>
-                                        <th style={{ paddingRight: '180px' }}>NAME</th>
-                                        <th style={{ paddingRight: '180px' }}>REG.NO.</th>
-                                        <th style={{ paddingRight: '180px' }}>E-MAIL</th>
-                                        <th style={{ paddingRight: '180px' }}>CONTROL</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {
-                                        students.map((student, index) => (
-                                            <tr key={index}>
-                                                <td>{index + 1}</td>
-                                                <td>{student.name}</td>
-                                                <td>{student.regNo}</td>
-                                                <td>{student.email}</td>
-                                                <td>
-                                                    <button>DELETE</button>
-                                                    <button>Edit</button>
-                                                </td>
-                                            </tr>
-                                        ))
-                                    }
-                                </tbody>
-                            </div>
+                            <thead>
+                                <tr>
+                                    <th style={{ paddingRight: '180px' }}>S.NO</th>
+                                    <th style={{ paddingRight: '180px' }}>NAME</th>
+                                    <th style={{ paddingRight: '180px' }}>REG.NO.</th>
+                                    <th style={{ paddingRight: '180px' }}>E-MAIL</th>
+                                    <th style={{ paddingRight: '180px' }}>CONTROL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    students.map((student, index) => (
+                                        <tr key={index}>
+                                            <td>{index + 1}</td>
+                                            <td>{student.name}</td>
+                                            <td>{student.regNo}</td>
+                                            <td>{student.email}</td>
+                                            <td>
+                                                <button>DELETE</button>
+                                                <button>Edit</button>
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
 
                         </table>
                     </div>
