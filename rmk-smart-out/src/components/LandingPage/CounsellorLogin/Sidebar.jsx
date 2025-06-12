@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {FaUserCircle} from 'react-icons/fa';
+
 const Sidebar=()=>{
     return(
         <aside className='sidebar'>
