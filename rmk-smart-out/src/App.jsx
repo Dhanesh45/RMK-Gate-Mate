@@ -5,7 +5,7 @@ import VerdictsPage from './pages/Verdicts/VerdictsPage';
 const App = () => {
   return (
     <div>
-      <LandingPage />
+      {/* <LandingPage /> */}
        <VerdictsPage />;
     </div>
   )
