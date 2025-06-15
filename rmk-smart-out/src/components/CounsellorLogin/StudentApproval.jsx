@@ -1,5 +1,6 @@
 import React from 'react'
 import rmklogo from "../../assets/LandingPageimg/rmklogo.png"
+import Sidebar from './Sidebar'
 
 
 const StudentApproval = () => {
@@ -50,10 +51,8 @@ const StudentApproval = () => {
 
   return (
     <div style={{display:"flex"}}>
-        <div style={{width:"15%",height:"100vh",border:"1px solid black"}}>
-
-        </div>
-        <div style={{width:"85%",height:"100vh",border:"1px solid red",backgroundColor:"rgba(238, 238, 238, 0.9333)"}}>
+        <Sidebar />
+        <div style={{width:"85%",height:"100vh",border:"1px solid red",backgroundColor:"rgba(238, 238, 238, 0.5)"}}>
             <div style={{display:"flex",justifyContent:"space-between",border:"1px solid black"}}>
                 <img src={rmklogo} width="9%" height="9%" style={{padding:"0.5%",border:"1px solid black"}}/>
                 <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"15px",fontWeight:"bolder",padding:"1.5% 0% 0% 0%",border:"1px solid black"}}>INFORMATION TECHNOLOGY</h1>
@@ -61,25 +60,28 @@ const StudentApproval = () => {
             <div>
                  <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"bolder",textAlign:"center",border:"1px solid black"}}>STUDENT APPROVAL LIST</h1>
                 <div style={{ width: "100%", height: "100%", textAlign: "center" }}>
-                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "80%", margin: "0 auto" }}>
-                        <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "90%", margin: "1% auto" ,border:"8px solid rgba(217, 217, 217,1)",borderRadius:"10px"}}>
+                        <table style={{ borderCollapse: "collapse", width: "100%" ,borderRadius:"20px"}}>
                         <thead>
                             <tr style={{margin:"1%"}}>
-                            <th style={{ padding: "4px", border: "1px solid black" }}>S.NO</th>
-                            <th style={{ padding: "4px", border: "1px solid black" }}>NAME</th>
-                            <th style={{ padding: "4px", border: "1px solid black" }}>REGISTER NUMBER</th>
-                            <th style={{ padding: "4px", border: "1px solid black" }}>REMARK</th>
-                            <th style={{ padding: "4px", border: "1px solid black" }}>VALIDATION</th>
+                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>S.NO</th>
+                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>NAME</th>
+                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>REGISTER NUMBER</th>
+                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>REMARK</th>
+                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>VALIDATION</th>
                             </tr>
                         </thead>
                         <tbody>
                             {students.map((student) => (
-                            <tr style={{backgroundColor:"white",margin:"10%"}} key={student.sno}>
+                            <tr style={{backgroundColor:"white",margin:"10%",borderTop:"8px solid rgba(217, 217, 217, 1)",borderRadius:"10px"}} key={student.sno}>
                                 <td style={{ padding: "10px",}}>{student.sno}</td>
                                 <td style={{ padding: "10px",}}>{student.name}</td>
                                 <td style={{ padding: "10px",}}>{student.regno}</td>
                                 <td style={{ padding: "10px",}}><input /></td>
-                                <td style={{ padding: "10px",}}><button>wrong</button><button>right</button></td>
+                                <td style={{ padding: "10px",}}>
+                                    <button>wrong</button>
+                                    <button>right</button>
+                                </td>
                             </tr>
                             ))}
                         </tbody>
