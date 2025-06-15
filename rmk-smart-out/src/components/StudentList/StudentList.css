@@ -1,20 +1,22 @@
-.student-list {
-    margin: 30px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    padding: 20px;
-  }
-  
-  .header-row, .student-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr 1fr;
-    padding: 12px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-    font-weight: 600;
-  }
-  
-  .student-row {
-    font-weight: 400;
-  }
-  
+ .student-list {
+  margin: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.header-row, .student-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 1fr;
+  padding: 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+  text-align: center;
+}
+
+.student-row {
+  font-weight: 100;
+}
+
+ 

@@ -1,7 +1,4 @@
-/* No extra styling needed for Recharts itself, but you can add wrapper if needed */
-
 .verdict-chart-container {
-    width: 60%;
-    margin: 20px;
-  }
-  
+  width: 60%;
+  margin: 20px;
+}
