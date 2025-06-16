@@ -1,4 +1,3 @@
-
 import LandingPagebg from "../../assets/LandingPageimg/landbg.jpg"
 import rmklogo from "../../assets/LandingPageimg/rmklogo.png"
 

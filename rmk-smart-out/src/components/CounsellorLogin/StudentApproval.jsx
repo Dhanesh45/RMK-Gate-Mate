@@ -52,25 +52,36 @@ const StudentApproval = () => {
   return (
     <div style={{display:"flex"}}>
         <Sidebar />
-        <div style={{width:"85%",height:"100vh",border:"1px solid red",backgroundColor:"rgba(238, 238, 238, 0.5)"}}>
-            <div style={{display:"flex",justifyContent:"space-between",border:"1px solid black"}}>
-                <img src={rmklogo} width="9%" height="9%" style={{padding:"0.5%",border:"1px solid black"}}/>
-                <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"15px",fontWeight:"bolder",padding:"1.5% 0% 0% 0%",border:"1px solid black"}}>INFORMATION TECHNOLOGY</h1>
+        <div style={{width:"85%",height:"100vh",backgroundColor:"rgba(238, 238, 238, 0.5)"}}>
+            <div style={{display:"flex",justifyContent:"space-between",}}>
+                <img src={rmklogo} width="9%" height="9%" style={{padding:"0.5%",}}/>
+                <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"15px",fontWeight:"bolder",padding:"1.5% 0% 0% 0%",}}>INFORMATION TECHNOLOGY</h1>
             </div>
             <div>
-                 <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"bolder",textAlign:"center",border:"1px solid black"}}>STUDENT APPROVAL LIST</h1>
+                 <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"bolder",textAlign:"center",}}>STUDENT APPROVAL LIST</h1>
                 <div style={{ width: "100%", height: "100%", textAlign: "center" }}>
-                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "90%", margin: "1% auto" ,border:"8px solid rgba(217, 217, 217,1)",borderRadius:"10px"}}>
+                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "90%",height:"77vh",overflowY:"auto", margin: "1% auto" ,border:"8px solid rgba(217, 217, 217,1)",borderRadius:"10px"}}>
                         <table style={{ borderCollapse: "collapse", width: "100%" ,borderRadius:"20px"}}>
                         <thead>
-                            <tr style={{margin:"1%"}}>
-                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>S.NO</th>
-                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>NAME</th>
-                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>REGISTER NUMBER</th>
-                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>REMARK</th>
-                            <th style={{ padding: "0.75%",backgroundColor:"white" }}>VALIDATION</th>
-                            </tr>
+                        <tr>
+                            <th style={{position: 'sticky',top: 0,backgroundColor: 'white', zIndex: 1,padding: '0.75%'}}>
+                                S.NO
+                            </th>
+                            <th style={{position: 'sticky',top: 0,backgroundColor: 'white',zIndex: 1,padding: '0.75%'}}>
+                                NAME
+                            </th>
+                            <th style={{position: 'sticky',top: 0,backgroundColor: 'white',zIndex: 1,padding: '0.75%'}}>
+                                REGISTER NUMBER
+                            </th>
+                            <th style={{position: 'sticky',top: 0,backgroundColor: 'white',zIndex: 1,padding: '0.75%'}}>
+                                REMARK
+                            </th>
+                            <th style={{position: 'sticky',top: 0,backgroundColor: 'white',zIndex: 1,padding: '0.75%'}}>
+                                VALIDATION
+                            </th>
+                        </tr>
                         </thead>
+
                         <tbody>
                             {students.map((student) => (
                             <tr style={{backgroundColor:"white",margin:"10%",borderTop:"8px solid rgba(217, 217, 217, 1)",borderRadius:"10px"}} key={student.sno}>
@@ -79,8 +90,8 @@ const StudentApproval = () => {
                                 <td style={{ padding: "10px",}}>{student.regno}</td>
                                 <td style={{ padding: "10px",}}><input /></td>
                                 <td style={{ padding: "10px",}}>
-                                    <button>wrong</button>
-                                    <button>right</button>
+                                    <button style={{fontWeight:"bold",padding:"2%",color:"white",backgroundColor:"rgba(14, 73, 71, 1)",border:"none",borderRadius:"5px",margin:"0% 5% 0% 0%"}}>APPROVE</button>
+                                    <button style={{fontWeight:"bold",padding:"2%",color:"white",backgroundColor:"rgba(197, 9, 12, 1)",border:"none",borderRadius:"5px"}}>REJECT</button>
                                 </td>
                             </tr>
                             ))}
