@@ -1,0 +1,239 @@
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #EEE;
+}
+
+.sidebar {
+  width: 15%;
+  min-width: 100px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.innerframe {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-width: 15%;
+  height: auto;
+}
+
+.title {
+  color: #0E4947;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.profile-card {
+  width: 90%;
+  height: 45%;
+ 
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 1rem;
+  
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.ammuni-img {
+  position: absolute;
+  bottom: -30px;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  border: 4px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.det {
+  padding: 1rem;
+}
+
+.det h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1%;
+  
+ 
+}
+
+.det a {
+  display: block;
+  color: #0077cc;
+  text-decoration: none;
+  margin: -1.5rem -2rem 0rem 2rem;
+
+}
+
+.det p {
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .ammuni-img {
+    position: static;
+    display: block;
+    margin: -40px auto 0 auto;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    margin: 0.5rem;
+  }
+
+  .ammuni-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+
+
+.charts-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  width: 90%;
+}
+
+.bar-chart-box,
+.pie-chart-box {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.chart-heading {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bar-summary {
+  margin-top: 1rem;
+}
+
+.bar-summary ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.bar-summary li {
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.pie-summary {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.pie-summary h5 {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.pie-summary h2 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+  background-color: gray;
+}
+
+.dot.green {
+  background-color: #00C49F;
+}
+
+.dot.blue {
+  background-color: #8884d8;
+}
+
+.dot.pink {
+  background-color: #FF69B4;
+}
+
+.dot.lightgreen {
+  background-color: #b7e4c7;
+}
+
+/* Medium screen adjustments */
+@media (max-width: 768px) {
+  .charts-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pie{
+ margin-left: 1rem;
+}
