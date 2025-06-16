@@ -1,5 +1,7 @@
+
 import React from 'react';
 import './Attendance.css'; // optional if you want to style
+import rmklogo from '../../../assets/LandingPageimg/rmklogo.png';
 
 export const Attendance = () => {
   const students = [
@@ -13,7 +15,7 @@ export const Attendance = () => {
     { id: 8, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
     { id: 9, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
     { id: 10, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
-     { id: 11, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
+    { id: 11, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
     { id: 12, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
     { id: 13, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
     { id: 14, name: 'Akash', reg: '111723203034', year: "III - 'A'" },
@@ -26,10 +28,17 @@ export const Attendance = () => {
   ];
 
   return (
+    <div style={{display:"flex"}}>
+        <div style={{width:"15%",height:"100vh",border:"1px solid black"}}>
     <div className="container">
+     <div className="logo-container">
+  <img src={rmklogo} alt="RMK Logo" className="logo" />
+
+      <h2 className='side '>INFORMATION TECHNOLOGY</h2>
       <h3 className="title">STUDENT ATTENDANCE SYSTEM</h3>
+      <div className="table-scroll-container">
       <table className="blacky">
-        <thead>
+        <thead className='head'>
           <tr>
             <th>S.I</th>
             <th>NAME</th>
@@ -46,13 +55,17 @@ export const Attendance = () => {
               <td>{student.reg}</td>
               <td>{student.year}</td>
               <td className="gap">
-                <button className="gun">PRESENT</button>
-                <button className="bun">ABSENT</button>
+                <button className='gun'>PRESENT</button>
+                <button className='bun'>ABSENT</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
   );
 };

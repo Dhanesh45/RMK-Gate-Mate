@@ -1,42 +1,70 @@
 /* Container */
 .container {
-  padding: 40px;
-  background-color: EEEEEE;
+  padding: 60% 143% 20% ;
+  color: #000000;
   min-height: 100vh;
+  width: 300%;
 }
 
+
+.side{
+  white-space: nowrap;
+  color: #0f766e;
+  margin-bottom: 19%;
+  margin-top: -25%;
+  margin-left: 105%;
+}
 /* Title */
 .title {
   text-align: center;
-  font-size: 24px;
-  color: 0E4947;
-  margin-bottom: 30px;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  white-space: nowrap;
+  font-weight: bolder;
+  font-size: 130%;
+  color: #0f766e;
+  margin-left: 40%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
 }
+
+.table-scroll-container {
+  width: 151%;
+  max-height: 400px;  
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(128, 114, 114, 0.2);
+}
+
 
 /* Table */
 .blacky {
   width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
-  box-shadow: 0 10px 30px rgb(0, 0, 0);
-  border-radius: 10px;
-  overflow: hidden;
+  table-layout:300px;
+  border-radius: 30px;
 }
 
 
 .blacky thead {
+  white-space: nowrap;
   background-color: #0f766e;
+  border-bottom:5px solid #e2e8f0 ;
   color: #ffffff;
+}
+
+.blacky thead th:last-child {
+  border-top-right-radius: 20px;
 }
 
 .blacky th,
 .blacky td {
   padding: 14px 20px;
   text-align: center;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 3px solid #e2e8f0;
   font-size: 15px;
+
 }
 
 
@@ -46,21 +74,19 @@
 
 
 .gap {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+  white-space: nowrap;
 }
 
 
 .gun {
-  background-color: #16a34a;
+   background-color: #28a745;
   color: white;
-  padding: 5px 14px;
   border: none;
-  border-radius: 6px;
+  padding: 8px 12px;
   font-weight: bold;
+  border-radius: 6px;
+  margin-right: 4%;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 .gun:hover {
@@ -81,4 +107,10 @@
 
 .bun:hover {
   background-color: #b91c1c;
+}
+
+.logo{
+  margin-left: -8%;
+  margin-top: -20%;
+  margin-bottom: 10%;
 }
