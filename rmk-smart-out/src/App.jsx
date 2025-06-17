@@ -1,12 +1,12 @@
 import React from 'react'
 import LandingPage from './components/LandingPage/LandingPage'
-import VerdictsPage from './pages/Verdicts/VerdictsPage';
+import VerdictsPage from './components/YearCoordinatorLogin/Verdicts/VerdictsPage/VerdictsPage';
 
 const App = () => {
   return (
     <div>
-      <LandingPage />
-       <VerdictsPage />;
+      {/* <LandingPage /> */}
+      <VerdictsPage />;
     </div>
   )
 }

@@ -1,0 +1,57 @@
+.main-layout {
+  display: flex;
+  height: 100vh; /* Full screen */
+  overflow: hidden;
+  background-color: #f0f2f5;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow: hidden; /* prevent full page scroll */
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c3d36;
+}
+
+/* Replaces old .charts with new layout */
+.charts-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chart-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 95%;
+  max-width: 1000px;
+}
+
+.chart-left {
+  flex: 2;
+}
+
+.chart-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px; /* for scrollbar space */
+}
+
