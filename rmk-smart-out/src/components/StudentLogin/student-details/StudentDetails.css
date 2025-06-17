@@ -92,3 +92,20 @@
     padding-top: 1%;
     padding-bottom: 1%;
 }
+.container5{
+    background-color: white;
+    margin:0 auto;
+    width:95%;
+    border-radius: 5px;
+}
+.table1{
+    width:100%;
+    border-collapse: collapse;
+}
+.table1 th,td{
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.table1 th{
+    font-weight: bold;
+}

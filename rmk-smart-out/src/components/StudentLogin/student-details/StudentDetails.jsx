@@ -46,40 +46,42 @@ const StudentDetails = () => {
                     </div>
                 </div>
                 <div className="container4">
-                    <div style={{ maxHeight: '300px', overflowY: 'scroll' }}>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th style={{ paddingRight: '180px' }}>S.NO</th>
-                                    <th style={{ paddingRight: '180px' }}>NAME</th>
-                                    <th style={{ paddingRight: '180px' }}>REG.NO.</th>
-                                    <th style={{ paddingRight: '180px' }}>E-MAIL</th>
-                                    <th style={{ paddingRight: '180px' }}>CONTROL</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    students.map((student, index) => (
-                                        <tr key={index}>
-                                            <td>{index + 1}</td>
-                                            <td>{student.name}</td>
-                                            <td>{student.regNo}</td>
-                                            <td>{student.email}</td>
-                                            <td>
-                                                <button>DELETE</button>
-                                                <button>Edit</button>
-                                            </td>
-                                        </tr>
-                                    ))
-                                }
-                            </tbody>
+                    <div className="container5">
+                        <div style={{ maxHeight: '520px', overflowY: 'scroll' }}>
+                            <table className="table1">
+                                <thead>
+                                    <tr>
+                                        <th style={{ padding: '1% 0.5% 1% 1%', width: "9%" }}>S.NO</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>NAME</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>REG.NO.</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>E-MAIL</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>CONTROL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        students.map((student, index) => (
+                                            <tr style={{ margin: '10%' }} key={index}>
+                                                <td style={{ padding: '1% 0.5% 1% 1%',width: "9%" }}>{index + 1}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%' ,width: "9%"}}>{student.name}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%' ,width: "9%"}}>{student.regNo}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%',width: "9%" }}>{student.email}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%',width: "9%" }}>
+                                                    <button style={{ margin: '0% 5% 0% 0%', fontWeight: 'bold', backgroundColor: 'rgba(197, 9, 12, 1)', borderRadius: '5px', color: 'white', border: 'none', padding: '1.5%',width:'35%' }}>DELETE</button>
+                                                    <button style={{ fontWeight: 'bold', backgroundColor: 'rgba(14, 73, 71, 1)', color: 'white', border: 'none', padding: '1.5%', borderRadius: '5px',width:'35%' }}>EDIT</button>
+                                                </td>
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
 
-                        </table>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div >
 
     )
 }
