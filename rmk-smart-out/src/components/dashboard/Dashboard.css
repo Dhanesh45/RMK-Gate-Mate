@@ -51,13 +51,14 @@ header {
   border-radius: 20px;
   overflow: hidden;
   margin-top: 1rem;
-  height: 10rem;
+  margin-bottom: -9rem;
+  
   width: 100%;
 }
 
 .banner {
-  position: relative;
-  height: 60%;
+  position:relative;
+  height: 50%;
 }
 
 .banner-img {
@@ -67,9 +68,9 @@ header {
 }
 
 .ammuni-img {
-  position: absolute;
+  position:absolute;
   bottom: -30px;
-  left: 5%;
+  left: 10%;
   width: 80px;
   height: 80px;
   border: 4px solid white;
@@ -85,7 +86,7 @@ header {
 }
 
 .det h2 {
-  margin: 0;
+  margin:0;
 }
 
 .det a {
@@ -97,6 +98,7 @@ header {
 .det p {
   font-weight: bold;
   font-size: 0.85rem;
+  
   margin-top: 0.5rem;
 }
 
@@ -106,7 +108,7 @@ header {
   justify-content: space-between;
   align-items:center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 5%;
   height: calc(100% - 320px);
 }
 
@@ -223,7 +225,7 @@ header {
   }
 }
 .bar-chart-box.compact {
-  margin-top: 15%;
+  margin-top: 10%;
   max-height: 50%;
   padding:0.5rem 1rem;
 }
@@ -255,7 +257,7 @@ header {
   margin-bottom: 0.5rem;
 }
 .pie-chart-box{
-  margin-top: 15%;
+  margin-top: 10%;
   max-width: 30%;
   max-height: 50%;
 }
