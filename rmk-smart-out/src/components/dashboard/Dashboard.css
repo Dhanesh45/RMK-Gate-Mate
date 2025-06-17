@@ -1,152 +1,113 @@
 .container {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #EEE;
+  overflow: hidden;
 }
 
 .sidebar {
   width: 15%;
-  min-width: 100px;
+  min-width: 120px;
   background-color: white;
-  border: 1px solid black;
+  border-right: 1px solid #ccc;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
 }
 
 .innerframe {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 1rem;
   font-family: 'Poppins', sans-serif;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
 }
 
 header {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .logo {
-  max-width: 15%;
+  max-width: 10%;
   height: auto;
 }
 
 .title {
   color: #0E4947;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  text-align: right;
+  text-align: end;
+  flex: 1;
 }
 
 .profile-card {
-  width: 90%;
-  height: 45%;
- 
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
   margin-top: 1rem;
-  
+  height: 10rem;
+  width: 100%;
 }
 
 .banner {
   position: relative;
+  height: 60%;
 }
 
 .banner-img {
   width: 100%;
-  max-height: 150px;
+  height: 100%;
   object-fit: cover;
 }
 
 .ammuni-img {
   position: absolute;
   bottom: -30px;
-  left: 10%;
+  left: 5%;
   width: 80px;
   height: 80px;
   border: 4px solid white;
   border-radius: 50%;
   object-fit: cover;
+  background-color: white;
 }
 
 .det {
   padding: 1rem;
+  padding-left: 6rem;
+  margin-top: 0.5rem;
 }
 
 .det h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 1%;
-  
- 
+  margin: 0;
 }
 
 .det a {
-  display: block;
   color: #0077cc;
   text-decoration: none;
-  margin: -1.5rem -2rem 0rem 2rem;
-
+  font-size: 0.9rem;
 }
 
 .det p {
   font-weight: bold;
-  margin: 2rem 0;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-
-  .ammuni-img {
-    position: static;
-    display: block;
-    margin: -40px auto 0 auto;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebar {
-    width: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-card {
-    margin: 0.5rem;
-  }
-
-  .ammuni-img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .title {
-    font-size: 1rem;
-  }
-}
-
-
-
+/* CHART SECTION */
 .charts-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items:center;
+  gap: 2rem;
   margin-top: 2rem;
-  gap: 1.5rem;
-  width: 90%;
+  height: calc(100% - 320px);
 }
 
 .bar-chart-box,
@@ -154,52 +115,53 @@ header {
   background-color: white;
   border-radius: 20px;
   padding: 1rem;
-  flex: 1 1 300px;
+  flex: 1;
+  min-width: 300px;
+  height: 100%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
 }
 
 .chart-heading {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+.summary-table {
+  width: 100%;
+  font-size: 0.85rem;
+  border-spacing: 1rem 0.4rem;
+}
+
+.summary-table td {
   text-align: center;
-}
-
-.bar-summary {
-  margin-top: 1rem;
-}
-
-.bar-summary ul {
-  list-style: none;
-  padding: 0;
-  font-size: 0.9rem;
-}
-
-.bar-summary li {
-  margin-bottom: 0.3rem;
-  display: flex;
-  align-items: center;
 }
 
 .pie-summary {
   text-align: center;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
-.pie-summary h5 {
-  font-size: 0.8rem;
-  color: gray;
+
+.tot{
+  margin-top: -35%;
 }
 
 .pie-summary h2 {
-  margin: 0.5rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 0.3rem 1;
+  display: flex;
+  justify-content: center;
+  margin-top: -1%;
 }
 
 .legend {
   display: flex;
   justify-content: space-around;
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
 .dot {
@@ -215,25 +177,91 @@ header {
   background-color: #00C49F;
 }
 
-.dot.blue {
-  background-color: #8884d8;
-}
-
-.dot.pink {
-  background-color: #FF69B4;
-}
-
 .dot.lightgreen {
   background-color: #b7e4c7;
 }
 
-/* Medium screen adjustments */
-@media (max-width: 768px) {
+/* Responsive tweaks */
+@media (max-width: 1024px) {
   .charts-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bar-chart-box,
+  .pie-chart-box {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .ammuni-img {
+    position: static;
+    margin: -40px auto 0 auto;
+  }
+
+  header {
     flex-direction: column;
     align-items: center;
   }
+
+  .det {
+    padding-left: 2rem;
+  }
+}
+.bar-chart-box.compact {
+  margin-top: 15%;
+  max-height: 50%;
+  padding:0.5rem 1rem;
+}
+
+.bar-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-wrapper {
+  width: 65%;
+  height: -0.9rem;
+}
+
+.summary-legend {
+  margin-top: -4%;
+  width: 35%;
+  padding-left: 1rem;
+}
+
+.summary-table th,
+.summary-table td {
+  font-size: 0.75rem;
+  padding: 2px 4px;
+}
+
+.bar-header {
+  margin-bottom: 0.5rem;
+}
+.pie-chart-box{
+  margin-top: 15%;
+  max-width: 30%;
+  max-height: 50%;
 }
 .pie{
- margin-left: 1rem;
+  max-width: 50%;
+  max-height: 200%;
+  margin-top: -20%;
+  margin-left:25%;
 }

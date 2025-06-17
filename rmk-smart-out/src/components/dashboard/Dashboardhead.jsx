@@ -20,7 +20,11 @@ const Dashboardhead = () => {
     { day: "day 6", pending: 3, approved: 6, rejected: 2 },
     { day: "day 7", pending: 3, approved: 4, rejected: 2 },
   ];
-
+const summary = [
+  { label: "pending", value: 12, color: "#00C49F" },
+  { label: "No of approved", value: 12, color: "#8884d8" },
+  { label: "No of rejected", value: 12, color: "#FF69B4" },
+];
   const pieData = [
     { name: "Male", value: 80 },
     { name: "Female", value: 45 },
@@ -31,7 +35,7 @@ const Dashboardhead = () => {
     <div className='container'>
       <div className="sidebar"></div>
 
-      <div className="innerframe">
+      <div className="innerframe" >
         <header>
           <img src={rmklogo} alt='RMK Logo' className="logo" />
           <h1 className="title">INFORMATION TECHNOLOGY</h1>
@@ -55,28 +59,46 @@ const Dashboardhead = () => {
 
         {/* Chart section */}
         <div className='charts-section'>
-          <div className='bar-chart-box'>
-            <h4 className='chart-heading'>OUTPASS TRACKER</h4>
-            <ResponsiveContainer width="100%" height={250}>
-              <BarChart data={barData}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                <XAxis dataKey="day" />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="pending" fill="#00C49F" />
-                <Bar dataKey="approved" fill="#8884d8" />
-                <Bar dataKey="rejected" fill="#FF69B4" />
-              </BarChart>
-            </ResponsiveContainer>
-            <div className="bar-summary">
-              
-              <ul>
-                <li><span className="dot green"></span> pending - 12 (28.6%)</li>
-                <li><span className="dot blue"></span> No of approved - 12 (28.6%)</li>
-                <li><span className="dot pink"></span> No of rejected - 12 (28.6%)</li>
-              </ul>
-            </div>
-          </div>
+          <div className='bar-chart-box compact'>
+  <div className="bar-header">
+    <h4 className='chart-heading'>OUTPASS TRACKER</h4>
+  </div>
+  <div className="bar-body">
+    <div className="chart-wrapper">
+      <ResponsiveContainer width="100%" height={140}>
+        <BarChart data={barData}>
+          <XAxis dataKey="day" fontSize={10} />
+          <YAxis fontSize={10} />
+          <Tooltip />
+          <Bar dataKey="pending" fill="#00C49F" barSize={10} />
+          <Bar dataKey="approved" fill="#8884d8" barSize={10} />
+          <Bar dataKey="rejected" fill="#FF69B4" barSize={10} />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+    <div className="summary-legend">
+      <table className="summary-table">
+        <thead>
+          <tr>
+            <th align="left">Label</th>
+            <th>Value</th>
+            <th>%</th>
+          </tr>
+        </thead>
+        <tbody>
+          {summary.map((item) => (
+            <tr key={item.label}>
+              <td style={{ color: item.color }}>{item.label}</td>
+              <td align="center">{item.value}</td>
+              <td align="center">28.6%</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 
           <div className='pie-chart-box'>
             <h4 className='chart-heading' >ATTENDANCE</h4>
@@ -86,9 +108,9 @@ const Dashboardhead = () => {
                 cx="50%"
                 cy="50%"
                 innerRadius={60}
-                outerRadius={80}
+                outerRadius={75}
                 fill="#8884d8"
-                paddingAngle={5}
+                paddingAngle={0}
                 dataKey="value"
               >
                 {pieData.map((entry, index) => (
@@ -97,8 +119,8 @@ const Dashboardhead = () => {
               </Pie>
             </PieChart>
             <div className="pie-summary">
-              <h5>TOTAL</h5>
-              <h2>125</h2>
+              <h5 className='tot'>TOTAL<h2 >125</h2></h5>
+              
               <div className="legend">
                 <span><span className='dot green'></span> MALE</span>
                 <span><span className='dot lightgreen'></span> FEMALE</span>
