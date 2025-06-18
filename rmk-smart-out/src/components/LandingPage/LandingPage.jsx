@@ -14,8 +14,8 @@ const LandingPage = () => {
         margin:0,padding:0
       }}
     >
-      <div>
-        {/* Content goes here */}
+      <div style={{width:"80%",height:"70vh",backgroundColor:"white"}}>
+        
       </div>
     </div>
   );
