@@ -1,4 +1,3 @@
-import React from "react";
 import RmkLogo from '../../../assets/LandingPageimg/rmklogo.png'
 import { useState } from 'react';
 
