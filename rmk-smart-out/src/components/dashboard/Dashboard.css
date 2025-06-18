@@ -7,12 +7,15 @@
 }
 
 .sidebar {
-  width: 15%;
+   width: 15%;
   min-width: 120px;
   background-color: white;
   border-right: 1px solid #ccc;
   padding: 1rem 0.5rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .innerframe {
@@ -22,6 +25,7 @@
   font-family: 'Poppins', sans-serif;
   padding: 1rem 2rem;
   box-sizing: border-box;
+  width: 85%;
 }
 
 header {
@@ -38,15 +42,14 @@ header {
 
 .title {
   color: #0E4947;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: end;
-  flex: 1;
+  font-size: 1.5rem;
+  font-weight :bolder;
+  text-align: right;
 }
 
 .profile-card {
-  display: flex;
-  flex-direction: column;
+  width: 90%;
+  height: 45%;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
@@ -266,4 +269,77 @@ header {
   max-height: 200%;
   margin-top: -20%;
   margin-left:25%;
+}
+
+
+
+.action {
+  list-style: none;
+}
+
+
+.role-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+
+
+.sidebar {
+  width: 15%;
+  min-width: 120px;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+ 
+ 
+}
+
+.role-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: rem;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+ 
+}
+
+.sidebar-menu .action {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+
+  display: flex;
+  align-items:end;
+  gap: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-menu .action:hover {
+  background-color: rgb(10, 85, 20)
+
+}
+
+.icon {
+  font-size: 1rem;
+}
+.button  {
+margin-top: 235%;
+align-items: center;
+margin-left: 20%;
+border-radius: 20px;
+ cursor: pointer;
+padding: 10px 40px 10px 40px;
+
+}
+.button:hover  {
+background-color: rgb(129, 139, 130)
+
 }
