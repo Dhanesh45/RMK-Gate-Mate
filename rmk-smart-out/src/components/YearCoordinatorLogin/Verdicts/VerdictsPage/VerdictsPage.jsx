@@ -6,14 +6,14 @@ import VerdictChart from '../VerdictChart/VerdictChart';
 import CustomPieChart from '../PieChart/PieChart';
 import StudentList from '../StudentList/StudentList';
 
+
+
 const VerdictsPage = () => (
   <div className="main-layout">
     <Sidebar />
     <div className="main-content">
       <Header />
-      <h2 className="title">VERDICTS</h2>
-
-      {/* Chart Box Wrapper */}
+    <h2 className="title">VERDICTS</h2>
       <div className="charts-container">
         <div className="chart-box">
           <div className="chart-left">
@@ -25,7 +25,6 @@ const VerdictsPage = () => (
         </div>
       </div>
 
-      {/* Student List Section */}
       <div className="student-scroll-container">
         <StudentList />
       </div>

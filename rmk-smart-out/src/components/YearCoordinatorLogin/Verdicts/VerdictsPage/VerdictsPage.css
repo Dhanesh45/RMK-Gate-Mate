@@ -1,26 +1,27 @@
 .main-layout {
   display: flex;
-  height: 100vh; /* Full screen */
+  height: 100vh;
   overflow: hidden;
   background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
 }
 
 .main-content {
   flex: 1;
   padding: 20px;
-  overflow: hidden; /* prevent full page scroll */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-
+/* Title now part of header, flexible spacing */
 .title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
   color: #1c3d36;
+  margin: 0;           /* reset margin since spacing is via .page-header */
 }
 
-/* Replaces old .charts with new layout */
 .charts-container {
   display: flex;
   justify-content: center;
@@ -52,6 +53,5 @@
 .student-scroll-container {
   flex: 1;
   overflow-y: auto;
-  padding-right: 10px; /* for scrollbar space */
+  padding-right: 10px;
 }
-
