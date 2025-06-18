@@ -1,7 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
-import rmklogo from "../../assets/LandingPageimg/rmklogo.png";
-import banner from "../../assets/dashboardimg/banner.jpg";
+import rmklogo from "../../../assets/LandingPageimg/rmklogo.png";
+import banner from "../../../assets/dashboardimg/banner.jpg";
 import ammuni from "/src/assets/dashboardimg/ammuni.jpg";
 
 // Recharts imports
@@ -9,6 +9,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, Legend
 } from 'recharts';
+import Sidebar from './Sidebar';
 
 const Dashboardhead = () => {
   const barData = [
@@ -33,6 +34,7 @@ const Dashboardhead = () => {
 
   return (
     <div className='container'>
+      <Sidebar />
     
       <div className="innerframe">
         <header>

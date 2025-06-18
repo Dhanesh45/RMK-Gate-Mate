@@ -22,10 +22,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
   padding: 1rem 2rem;
   box-sizing: border-box;
   width: 85%;
+  height: 100vh;
+  border: 1px solid black;
 }
 
 header {
@@ -48,15 +49,15 @@ header {
 }
 
 .profile-card {
-  width: 90%;
-  height: 45%;
+  width: 100%;
+  height: 50vh;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
   margin-top: 1rem;
-  margin-bottom: -9rem;
-  
-  width: 100%;
+  margin-bottom: -8rem;
+  border: 1px solid black;
+
 }
 
 .banner {
@@ -111,7 +112,6 @@ header {
   justify-content: space-between;
   align-items:center;
   gap: 2rem;
-  margin-top: 5%;
   height: calc(100% - 320px);
 }
 
