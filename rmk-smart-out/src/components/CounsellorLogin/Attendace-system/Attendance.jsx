@@ -29,6 +29,8 @@ export const Attendance = () => {
 
   return (
     <div style={{
+      width:"100%",
+      height:"100vh",
       display: "flex",
       backgroundColor: '#eee',
     }}>
@@ -40,8 +42,8 @@ export const Attendance = () => {
             <h2 className='side '>INFORMATION TECHNOLOGY</h2>
             <h3 className="title">STUDENT ATTENDANCE SYSTEM</h3>
             <div className="table-scroll-container">
-              <table className="blacky">
-                <thead className='head'>
+              <table className="table">
+                <thead className='thead'>
                   <tr>
                     <th>S.I</th>
                     <th>NAME</th>

@@ -22,14 +22,14 @@
   font-weight: bolder;
   font-size: 130%;
   color: rgba(14, 73, 71, 1);
-  margin-left: 48%;
   margin-bottom: 2%;
   text-transform: uppercase;
 }
 
 .table-scroll-container {
-  width: 130%;
-  margin-left: 15%;
+  display: flex;
+  border:1000px solid black;
+  width: 200%;
   max-height: 24rem;  
   overflow-y: auto;
   overflow-x: hidden;
@@ -46,8 +46,8 @@
 
 
 /* Table */
-.blacky {
-  width: 105%;
+.table {
+  width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   background-color: #ffffff;
@@ -55,7 +55,7 @@
 }
 
 
-.blacky thead {
+.table thead {
   white-space: nowrap;
   color: #000000;
   position: sticky;
@@ -65,14 +65,14 @@
   top:-1%
 }
 
-.blacky thead th {
+.table thead th {
   padding: 1% 1%; /* Top-Bottom: 20px, Left-Right: 10px */
 }
 
 
 
-.blacky th,
-.blacky td {
+.table th,
+.table td {
   padding: 1.5% 1%;
   margin:auto;
   text-align: center;
@@ -82,7 +82,7 @@
 }
 
 
-.blacky tbody tr:hover {
+.table tbody tr:hover {
   background-color: #f1f5f9;
 }
 
