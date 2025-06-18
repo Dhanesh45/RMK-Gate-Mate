@@ -14,7 +14,7 @@
 .innerframe {
     width: 85%;
     height: 100vh;
-    background-color: #EEEEEE;
+    background-color:rgba(238, 238, 238, 0.5);
     border: 1px solid black;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .title1 {
-    color: #0E4947;
+    color: rgba(14, 73, 71, 1);
     font-size: 20px;
     border: 1px solid black;
     font-weight: bolder;
@@ -45,8 +45,8 @@
 
 .container3 {
     margin-top: 0.5%;
-    box-shadow: 1px 1px 1px 1px #D9D9D9;
-    background-color: #D9D9D9;
+    box-shadow: 1px 1px 1px 1px rgba(217, 217, 217, 1);
+    background-color: rgba(217, 217, 217, 1);
     border-radius: 10px;
     width: 90%;
     height: 8%;
@@ -68,34 +68,37 @@
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px white;
     border: none;
+    padding-left: 0.5%;
+    font-weight: bold;
 }
 
 .input button {
     width: 23%;
     height: 5vh;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px 1px #0E4947;
+    box-shadow: 1px 1px 1px 1px rgba(14, 73, 71, 1);
     border: none;
     color: white;
-    background-color: #0E4947;
+    background-color:rgba(14, 73, 71, 1);
+    font-weight: bold;
 }
 
 .container4 {
-    box-shadow: 1px 1px 1px 1px #D9D9D9;
-    background-color: #D9D9D9;
+    box-shadow: 1px 1px 1px 1px rgba(217, 217, 217, 1);
+    background-color: rgba(217, 217, 217, 1);
     border-radius: 10px;
     width: 90%;
     height: 70vh;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 .container5{
     background-color: white;
     margin:0 auto;
-    width:95%;
+    width:99%;
     border-radius: 5px;
 }
 .table1{

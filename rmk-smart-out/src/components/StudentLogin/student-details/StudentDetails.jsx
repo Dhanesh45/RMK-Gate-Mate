@@ -60,7 +60,7 @@ const StudentDetails = () => {
                                 <tbody>
                                     {
                                         students.map((student, index) => (
-                                            <tr style={{ margin: '10%' }} key={index}>
+                                            <tr style={{ margin: '10%',borderTop:'8px solid rgba(217, 217, 217, 1)' }} key={index}>
                                                 <td style={{ padding: '1% 0.5% 1% 1%',width: "9%" }}>{index + 1}</td>
                                                 <td style={{ padding: '1% 0.5% 1% 0%' ,width: "9%"}}>{student.name}</td>
                                                 <td style={{ padding: '1% 0.5% 1% 0%' ,width: "9%"}}>{student.regNo}</td>
