@@ -38,8 +38,7 @@ export const Attendance = () => {
         <div className="container">
           <div className="logo-container">
             <img src={rmklogo} alt="RMK Logo" className="logo" />
-             <div className="title-area">
-            <h2 className='side '>INFORMATION TECHNOLOGY</h2>
+             <h2 className='side '>INFORMATION TECHNOLOGY</h2>
             <h3 className="title">STUDENT ATTENDANCE SYSTEM</h3>
             <div className="table-scroll-container">
               <table className="table">
@@ -72,8 +71,5 @@ export const Attendance = () => {
         </div>
       </div>
       </div>
-    </div>
-
-    
   );
 };
