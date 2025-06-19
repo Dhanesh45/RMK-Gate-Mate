@@ -44,7 +44,7 @@ const students = [
 ];
 
 const StudentList = () => (
-  <div style={{ backgroundColor: "white", padding: "20px", borderRadius: "10px", height: "400px", display: "flex", flexDirection: "column" }}>
+  <div style={{ backgroundColor: "white", padding: "20px", borderRadius: "10px", height: "100px", display: "flex", flexDirection: "column" }}>
     
     {/* Fixed Header */}
     <div style={{ 
