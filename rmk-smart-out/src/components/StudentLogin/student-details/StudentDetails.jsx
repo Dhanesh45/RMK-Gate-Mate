@@ -60,14 +60,14 @@ const StudentDetails = () => {
                                 <tbody>
                                     {
                                         students.map((student, index) => (
-                                            <tr style={{ margin: '10%',borderTop:'8px solid rgba(217, 217, 217, 1)' }} key={index}>
-                                                <td style={{ padding: '1% 0.5% 1% 1%',width: "9%" }}>{index + 1}</td>
-                                                <td style={{ padding: '1% 0.5% 1% 0%' ,width: "9%"}}>{student.name}</td>
-                                                <td style={{ padding: '1% 0.5% 1% 0%' ,width: "9%"}}>{student.regNo}</td>
-                                                <td style={{ padding: '1% 0.5% 1% 0%',width: "9%" }}>{student.email}</td>
-                                                <td style={{ padding: '1% 0.5% 1% 0%',width: "9%" }}>
-                                                    <button style={{ margin: '0% 5% 0% 0%', fontWeight: 'bold', backgroundColor: 'rgba(197, 9, 12, 1)', borderRadius: '5px', color: 'white', border: 'none', padding: '1.5%',width:'35%' }}>DELETE</button>
-                                                    <button style={{ fontWeight: 'bold', backgroundColor: 'rgba(14, 73, 71, 1)', color: 'white', border: 'none', padding: '1.5%', borderRadius: '5px',width:'35%' }}>EDIT</button>
+                                            <tr style={{ margin: '10%', borderTop: '8px solid rgba(217, 217, 217, 1)' }} key={index}>
+                                                <td style={{ padding: '1% 0.5% 1% 1%', width: "9%" }}>{index + 1}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>{student.name}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>{student.regNo}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>{student.email}</td>
+                                                <td style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>
+                                                    <button style={{ margin: '0% 5% 0% 0%', fontWeight: 'bold', backgroundColor: 'rgba(197, 9, 12, 1)', borderRadius: '5px', color: 'white', border: 'none', padding: '1.5%', width: '35%' }}>DELETE</button>
+                                                    <button style={{ fontWeight: 'bold', backgroundColor: 'rgba(14, 73, 71, 1)', color: 'white', border: 'none', padding: '1.5%', borderRadius: '5px', width: '35%' }}>EDIT</button>
                                                 </td>
                                             </tr>
                                         ))
