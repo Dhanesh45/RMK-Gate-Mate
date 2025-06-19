@@ -44,16 +44,28 @@ const students = [
 ];
 
 const StudentList = () => (
-  <div style={{ backgroundColor: "white", padding: "20px", borderRadius: "10px", height: "100px", display: "flex", flexDirection: "column" }}>
-    
+  <div
+    style={{
+      backgroundColor: "white",
+      padding: "20px",
+      borderRadius: "15px",
+      height: "100px", // Increased height for scroll visibility
+      display: "flex",
+      flexDirection: "column",
+      border: "5px solid #d3d3d3", // Light gray border
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Optional shadow for depth
+    }}
+  >
     {/* Fixed Header */}
-    <div style={{ 
-      display: "grid", 
-      gridTemplateColumns: "1fr 1fr 1fr 1fr", 
-      fontWeight: "bold", 
-      borderBottom: "2px solid gray", 
-      paddingBottom: "10px"
-    }}>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        fontWeight: "bold",
+        borderBottom: "2px solid gray",
+        paddingBottom: "10px",
+      }}
+    >
       <div>NAME</div>
       <div>REG.NO</div>
       <div>EMAIL ID</div>
@@ -62,24 +74,22 @@ const StudentList = () => (
 
     {/* Scrollable Student Data */}
     <div style={{ overflowY: "auto", flex: 1 }}>
-      {
-        students.map((s, index) => (
-          <div 
-            key={index} 
-            style={{ 
-              display: "grid", 
-              gridTemplateColumns: "1fr 1fr 1fr 1fr", 
-              padding: "10px 0", 
-              borderBottom: "1px solid lightgray" 
-            }}
-          >
-            <div>{s.name}</div>
-            <div>{s.reg}</div>
-            <div>{s.email}</div>
-            <div>{s.year}</div>
-          </div>
-        ))
-      }
+      {students.map((s, index) => (
+        <div
+          key={index}
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            padding: "10px 0",
+            borderBottom: "1px solid lightgray",
+          }}
+        >
+          <div>{s.name}</div>
+          <div>{s.reg}</div>
+          <div>{s.email}</div>
+          <div>{s.year}</div>
+        </div>
+      ))}
     </div>
   </div>
 );
