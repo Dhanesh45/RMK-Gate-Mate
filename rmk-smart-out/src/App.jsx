@@ -1,14 +1,14 @@
 import React from 'react'
-import LandingPage from './components/LandingPage/LandingPage'
-import Sidebar from './components/CounsellorLogin/Attendace-system/Sidebar'
-import { Attendance } from './components/CounsellorLogin/Attendace-system/Attendance'
+// import LandingPage from './components/LandingPage/LandingPage'
+import Attendance from '/src/components/CounsellorLogin/Attendace-system/Attendance.jsx';
+
 
 const App = () => {
   return (
     <div>
       {/* <LandingPage /> */}
       <Attendance/>
-      <Sidebar/>
+      
     </div>
   )
 }
