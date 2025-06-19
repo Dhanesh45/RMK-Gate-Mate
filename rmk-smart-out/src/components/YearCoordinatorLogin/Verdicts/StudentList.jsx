@@ -1,6 +1,3 @@
-import React from 'react';
-import './StudentList.css';
-
 const students = [
   { name: "AAKASH M",reg: "111723203001",email: "230508.it@rmkec.ac.in",year: "II & A" },
   { name: "ABHISHEK P",reg: "111723203002",email: "230098.it@rmkec.ac.in",year: "II & A" },
@@ -47,21 +44,43 @@ const students = [
 ];
 
 const StudentList = () => (
-  <div className="student-list">
-    <div className="header-row">
-      <span>Name</span>
-      <span>Reg. No</span>
-      <span>Email ID</span>
-      <span>Year & Sec</span>
+  <div style={{ backgroundColor: "white", padding: "20px", borderRadius: "10px", height: "400px", display: "flex", flexDirection: "column" }}>
+    
+    {/* Fixed Header */}
+    <div style={{ 
+      display: "grid", 
+      gridTemplateColumns: "1fr 1fr 1fr 1fr", 
+      fontWeight: "bold", 
+      borderBottom: "2px solid gray", 
+      paddingBottom: "10px"
+    }}>
+      <div>NAME</div>
+      <div>REG.NO</div>
+      <div>EMAIL ID</div>
+      <div>YEAR & SEC</div>
     </div>
-    {students.map((s, idx) => (
-      <div className="student-row" key={idx}>
-        <span>{s.name}</span>
-        <span>{s.reg}</span>
-        <span>{s.email}</span>
-        <span>{s.year}</span>
-      </div>
-    ))}
+
+    {/* Scrollable Student Data */}
+    <div style={{ overflowY: "auto", flex: 1 }}>
+      {
+        students.map((s, index) => (
+          <div 
+            key={index} 
+            style={{ 
+              display: "grid", 
+              gridTemplateColumns: "1fr 1fr 1fr 1fr", 
+              padding: "10px 0", 
+              borderBottom: "1px solid lightgray" 
+            }}
+          >
+            <div>{s.name}</div>
+            <div>{s.reg}</div>
+            <div>{s.email}</div>
+            <div>{s.year}</div>
+          </div>
+        ))
+      }
+    </div>
   </div>
 );
 
