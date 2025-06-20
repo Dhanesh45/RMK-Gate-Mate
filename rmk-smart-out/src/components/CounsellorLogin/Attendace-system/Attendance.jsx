@@ -26,9 +26,9 @@ const Attendance = () => {
           <img src={ rmklogo } className='logo'/>
           <h1 className="title">INFORMATION TECHNOLOGY</h1>
         </div>
-        
+        <div className="sub">
           <h3 className="subtitle">STUDENT ATTENDANCE SYSTEM</h3>
-        
+        </div>
         <div className="table-container">
           <table className="attendance-table">
             <thead>
