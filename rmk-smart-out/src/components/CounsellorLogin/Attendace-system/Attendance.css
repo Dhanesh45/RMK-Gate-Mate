@@ -10,7 +10,6 @@
   width: 85%;
 }
 
-/* Header */
 .header {
   display: flex;
   text-align: center;
@@ -22,8 +21,6 @@
   padding:0.5%;
   height: 9%;               
 }
-
-
 
 .title {
   font-size: 15px;
@@ -40,7 +37,6 @@
   padding-bottom:1%; 
 }
 
-/* Table */
 .table-container {
   width: 81%;
   height: 74vh;
@@ -58,6 +54,7 @@
   border-top-right-radius: 10px;
 }
 
+/* Table */
 .attendance-table {
   width: 100%;
   border-collapse: collapse;
@@ -74,13 +71,11 @@
   border-top:5px solid rgba(217, 217, 217, 1);
 }
 
-
-
 .attendance-table th {
   text-align: center;
   font-weight: bold;
   position:sticky;
-  top:-0.2rem ;
+  top:0% ;
   z-index: 1;
 }
 
@@ -100,7 +95,6 @@
   background-color: #248e4b;
 }
 
-
 .absent {
   background-color: rgba(197, 9, 12, 1);
   color: white;
@@ -116,4 +110,5 @@
    {
   background-color: rgb(241, 33, 37);
 }
+
 
