@@ -5,17 +5,17 @@ import Sidebar from "./Sidebar";
 
 const Attendance = () => {
   const students = [
-    { id: 1, name: 'AKASH', reg: '111723203001', year: 'II–A' },
-    { id: 2, name: 'GOKUL', reg: '111723203001', year: 'II–A' },
-    { id: 3, name: 'HARISH', reg: '111723203001', year: 'II–A' },
-    { id: 4, name: 'DHANESH', reg: '111723203001', year: 'II–A' },
-    { id: 5, name: 'DHANRAJ', reg: '111723203001', year: 'II–A' },
-    { id: 6, name: 'DHINESH', reg: '111723203001', year: 'II–A' },
-    { id: 1, name: 'AKASH', reg: '111723203001', year: 'II–A' },
-    { id: 2, name: 'GOKUL', reg: '111723203001', year: 'II–A' },
-    { id: 3, name: 'HARISH', reg: '111723203001', year: 'II–A' },
-    { id: 4, name: 'DHANESH', reg: '111723203001', year: 'II–A' },
-    { id: 5, name: 'DHANRAJ', reg: '111723203001', year: 'II–A' }
+    { id: 1. , name: 'AKASH', reg: '111723203001', year: 'II–A' },
+    { id: 2. , name: 'GOKUL', reg: '111723203001', year: 'II–A' },
+    { id: 3. , name: 'HARISH', reg: '111723203001', year: 'II–A' },
+    { id: 4. , name: 'DHANESH', reg: '111723203001', year: 'II–A' },
+    { id: 5. , name: 'DHANRAJ', reg: '111723203001', year: 'II–A' },
+    { id: 6. , name: 'DHINESH', reg: '111723203001', year: 'II–A' },
+    { id: 7. , name: 'AKASH', reg: '111723203001', year: 'II–A' },
+    { id: 8. , name: 'GOKUL', reg: '111723203001', year: 'II–A' },
+    { id: 9. , name: 'HARISH', reg: '111723203001', year: 'II–A' },
+    { id: 10. , name: 'DHANESH', reg: '111723203001', year: 'II–A' },
+    { id: 11. , name: 'DHANRAJ', reg: '111723203001', year: 'II–A' }
   ];
 
   return (
@@ -43,7 +43,7 @@ const Attendance = () => {
             <tbody>
               {students.map((student, index) => (
                 <tr key={index}>
-                  <td>1.</td>
+                  <td>{student.id}</td>
                   <td>{student.name}</td>
                   <td>{student.reg}</td>
                   <td>{student.year}</td>
