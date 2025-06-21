@@ -10,7 +10,7 @@ const COLORS = ['#7556D3', '#5FD9E0'];
 const CustomPieChart = () => (
   <div style={{ flex:1, backgroundColor: "white", padding: "20px", borderRadius: "10px" }}>
     <h4>CHART</h4>
-    <ResponsiveContainer width="100%" height={250}>
+    <ResponsiveContainer width="100%" height={180}>
       <PieChart>
         <Pie data={data} innerRadius={50} outerRadius={80} dataKey="value">
           {data.map((_, index) => (

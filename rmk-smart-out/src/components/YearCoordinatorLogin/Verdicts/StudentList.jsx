@@ -47,43 +47,46 @@ const StudentList = () => (
   <div
     style={{
       backgroundColor: "white",
-      padding: "20px",
-      borderRadius: "15px",
-      height: "100px", // Increased height for scroll visibility
+      borderRadius: "10px",
+      border: "2px solid #ccc",
+      overflow: "hidden",
+      maxHeight: "400px", // Adjust height as needed
       display: "flex",
       flexDirection: "column",
-      border: "5px solid #d3d3d3", // Light gray border
-      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Optional shadow for depth
     }}
   >
     {/* Fixed Header */}
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        gridTemplateColumns: "0.5fr 1.5fr 1.5fr 2fr 1fr",
         fontWeight: "bold",
-        borderBottom: "2px solid gray",
-        paddingBottom: "10px",
+        padding: "10px",
+        backgroundColor: "#f3f3f3",
+        borderBottom: "2px solid #ccc",
+        flexShrink: 0,
       }}
     >
+      <div>SI</div>
       <div>NAME</div>
       <div>REG.NO</div>
       <div>EMAIL ID</div>
       <div>YEAR & SEC</div>
     </div>
 
-    {/* Scrollable Student Data */}
+    {/* Scrollable Rows */}
     <div style={{ overflowY: "auto", flex: 1 }}>
       {students.map((s, index) => (
         <div
           key={index}
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            padding: "10px 0",
-            borderBottom: "1px solid lightgray",
+            gridTemplateColumns: "0.5fr 1.5fr 1.5fr 2fr 1fr",
+            padding: "10px",
+            borderBottom: "1px solid #eee",
           }}
         >
+          <div>{index + 1}.</div>
           <div>{s.name}</div>
           <div>{s.reg}</div>
           <div>{s.email}</div>
