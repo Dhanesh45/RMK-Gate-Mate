@@ -18,7 +18,7 @@ const data = [
 const VerdictChart = () => (
   <div style={{ flex: 2, backgroundColor: "white", padding: "5px", borderRadius: "10px" }}>
     <h4>Number of Student</h4>
-    <ResponsiveContainer width="100%" height={220}>
+    <ResponsiveContainer width="100%" height={170}>
       <BarChart data={data}>
         <XAxis dataKey="month" />
         <YAxis />

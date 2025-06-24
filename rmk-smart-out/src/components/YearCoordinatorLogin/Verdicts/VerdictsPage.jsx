@@ -8,7 +8,7 @@ import StudentList from "./StudentList.jsx";
 const VerdictsPage = () => (
   <div
     style={{
-      padding: "20px",
+      marginLeft: "20px",
       display: "flex",
       flexDirection: "column",
       gap: "10px",
@@ -22,23 +22,23 @@ const VerdictsPage = () => (
       style={{
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",
+        alignItems: "center"
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+      <div>
         <img
           src={rmklogo}
           alt="RMK Logo"
-          style={{ width: "150px", height: "auto" }}
+          style={{ width: "40%", height: "auto" }}
         />
       </div>
-      <h2 style={{ flex: 1, textAlign: "end", marginRight: "10px" }}>
+      <h2 style={{textAlign: "end",color:"rgba(14, 73, 71, 1)" }}>
         INFORMATION TECHNOLOGY
       </h2>
     </div>
 
     {/* Page Title */}
-    <h3 style={{ textAlign: "center", margin: "5px 0 0 0" }}>VERDICTS</h3>
+    <h3 style={{ textAlign: "center",color:"rgba(14, 73, 71, 1)", fontSize:"20px" }}>VERDICTS</h3>
 
     {/* Charts Container */}
     <div

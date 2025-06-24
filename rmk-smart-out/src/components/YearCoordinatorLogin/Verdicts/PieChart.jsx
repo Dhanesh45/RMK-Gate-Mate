@@ -33,12 +33,12 @@ const CustomPieChart = () => (
     <h4 style={{ marginRight: "50%" }}>CURRENT LIST</h4>
 
 
-    <ResponsiveContainer width="100%" height={170}>
+    <ResponsiveContainer width="80%" height={120}>
       <PieChart>
         <Pie
           data={data}
-          innerRadius={60}
-          outerRadius={80}
+          innerRadius={40}
+          outerRadius={60}
           paddingAngle={5}
           dataKey="value"
         >
@@ -54,9 +54,9 @@ const CustomPieChart = () => (
 
     {/* Custom Legend */}
     <div style={{ fontSize: '14px', color: '#333' }}>
-      <span style={{ color: '#166F1A', fontWeight: 'bold' }}>APPROVED – 70 </span>
+      <span style={{ color: '#166F1A', fontWeight: 'bold' }}>APPROVED – 36 </span>
       &nbsp; &nbsp;
-      <span style={{ color: '#7AD75E', fontWeight: 'bold' }}>REJECTED – 30</span>
+      <span style={{ color: '#7AD75E', fontWeight: 'bold' }}>REJECTED – 6</span>
     </div>
   </div>
 );
