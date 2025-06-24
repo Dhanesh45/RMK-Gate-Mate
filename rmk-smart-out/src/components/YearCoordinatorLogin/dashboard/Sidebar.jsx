@@ -15,12 +15,13 @@ const Sidebar = () => {
     {icon:<BsListCheck />,name:"ATTENDANCE"},
   ]
 
-  const HoverLi=styled.li `
+  const HoverLi=styled.li 
+  `
     display:flex;
     gap:5px;
     list-style:none;
     padding:5%;
-    &:hover{
+    &:hover {
       background-color:rgba(14, 73, 71, 1);
       color:white;
     }
@@ -44,6 +45,7 @@ const Sidebar = () => {
               </HoverLi>
           )})
         }
+        
         </ul>
       </div>
       <div>
@@ -51,7 +53,7 @@ const Sidebar = () => {
           <div>
             <CgProfile />
           </div> 
-          <h5>COUNSELLOR</h5>
+          <h5>YEAR COORDINATOR</h5>
         </div>
         <button style={{margin:"10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center"}}>
           <IoIosLogOut />

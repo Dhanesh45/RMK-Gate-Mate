@@ -31,6 +31,12 @@ const Dashboardhead = () => {
     { name: "Female", value: 45 },
   ];
   const COLORS = ["#6cc091", "#b7e4c7"];
+  const Psum=barData.reduce((tot,val)=>tot+val.pending, 0);
+  const Asum=barData.reduce((tot,val)=>tot+val.approved, 0);
+  const Rsum=barData.reduce((tot,val)=>tot+val. rejected, 0);
+  const Ppercentage = (Psum / 125) * 100;
+  const Apercentage = (Asum / 125) * 100;
+  const Rpercentage = (Rsum / 125) * 100;
 
   return (
     <div className='container'>
@@ -83,19 +89,27 @@ const Dashboardhead = () => {
                 <table className="summary-table">
                   <thead>
                     <tr>
-                      <th align="left">Label</th>
+                      <th align="center">Label</th>
                       <th>Value</th>
                       <th>%</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {summary.map((item) => (
-                      <tr key={item.label}>
-                        <td style={{ color: item.color }}>{item.label}</td>
-                        <td align="center">{item.value}</td>
-                        <td align="center">28.6%</td>
+                      <tr >
+                        <td style={{ color:'#00C49F'}}>Pending</td>
+                        <td align="center">{Psum}</td>
+                        <td align="center">{Ppercentage}%</td>
                       </tr>
-                    ))}
+                      <tr>
+                        <td style={{ color:'#8884d8'}}>No of approved</td>
+                        <td align="center">{Asum}</td>
+                        <td align="center">{Apercentage}%</td>
+                      </tr>
+                      <tr>
+                        <td style={{ color:'#FF69B4'}}>No of rejected</td>
+                        <td align="center">{Rsum}</td>
+                        <td align="center">{Rpercentage}%</td>
+                      </tr>
                   </tbody>
                 </table>
               </div>
