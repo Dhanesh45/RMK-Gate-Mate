@@ -48,7 +48,7 @@ const StudentLogin = () => {
                         </p>
                       </label>
 
-                      <a href="" style={{ color: "blue", fontWeight: "600" }}>Forget Password?</a>
+                      <a href="" style={{ color: "rgba(82, 179, 134, 1)", fontWeight: "600" }}>Forget Password?</a>
                     </div>
 
                     <div style={{textAlign:"center"}}>
