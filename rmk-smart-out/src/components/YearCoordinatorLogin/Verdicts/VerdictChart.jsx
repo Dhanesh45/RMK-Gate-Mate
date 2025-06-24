@@ -16,7 +16,7 @@ const data = [
 ];
 
 const VerdictChart = () => (
-  <div style={{ flex:2, backgroundColor: "white", padding: "5px", borderRadius: "10px" }}>
+  <div style={{ flex: 2, backgroundColor: "white", padding: "5px", borderRadius: "10px" }}>
     <h4>Number of Student</h4>
     <ResponsiveContainer width="100%" height={220}>
       <BarChart data={data}>

@@ -1,5 +1,5 @@
-import { BiBarChartSquare ,BiSolidUserDetail } from "react-icons/bi";
-import { MdSpaceDashboard ,MdOutlineAppRegistration } from "react-icons/md";
+import { BiBarChartSquare, BiSolidUserDetail } from "react-icons/bi";
+import { MdSpaceDashboard, MdOutlineAppRegistration } from "react-icons/md";
 import { BsListCheck } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
@@ -7,11 +7,11 @@ import styled from 'styled-components';
 
 const Sidebar = () => {
   const sidebarContents = [
-    {icon: <MdSpaceDashboard/>, name: "DASHBOARD"},
-    {icon: <BiSolidUserDetail/>, name: "STUDENTS DETAILS"},
-    {icon: <MdOutlineAppRegistration/>, name: "APPROVAL LIST"},
-    {icon: <BiBarChartSquare/>, name: "VERDICTS"},
-    {icon: <BsListCheck/>, name: "ATTENDANCE"},
+    { icon: <MdSpaceDashboard />, name: "DASHBOARD" },
+    { icon: <BiSolidUserDetail />, name: "STUDENTS DETAILS" },
+    { icon: <MdOutlineAppRegistration />, name: "APPROVAL LIST" },
+    { icon: <BiBarChartSquare />, name: "VERDICTS" },
+    { icon: <BsListCheck />, name: "ATTENDANCE" },
   ];
 
   const HoverLi = styled.li`

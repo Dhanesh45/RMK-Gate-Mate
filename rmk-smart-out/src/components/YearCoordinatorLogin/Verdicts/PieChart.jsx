@@ -18,7 +18,7 @@ const CustomPieChart = () => (
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      maxWidth:"300px"
+      maxWidth: "300px"
     }}
   >
     <div
@@ -30,7 +30,7 @@ const CustomPieChart = () => (
     >
     </div>
 
-    <h4>CURRENT LIST</h4>
+    <h4 style={{ marginRight: "50%" }}>CURRENT LIST</h4>
 
 
     <ResponsiveContainer width="100%" height={170}>
