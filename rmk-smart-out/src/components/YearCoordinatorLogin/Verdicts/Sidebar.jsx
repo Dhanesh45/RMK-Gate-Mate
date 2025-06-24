@@ -30,12 +30,12 @@ const Sidebar = () => {
   return (
     <div style={{ width: "15%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "space-between", borderRadius: "0% 15px 15px 0%", backgroundColor: "white" }}>
       <div>
-        <h3 style={{ padding: "20px" }}>COUNSELLOR</h3>
+        <h3 style={{ padding: "35px" }}>COUNSELLOR</h3>
         <ul>
           {sidebarContents.map((content, index) => (
             <HoverLi key={index}>
               <div>{content.icon}</div>
-              <div style={{ fontSize: "90%", fontWeight: "bold" }}>{content.name}</div>
+              <div style={{ fontSize: "80%", fontWeight: "bold" }}>{content.name}</div>
             </HoverLi>
           ))}
         </ul>
