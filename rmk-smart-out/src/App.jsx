@@ -13,7 +13,7 @@ const App = () => {
       {/* <CommonLogin /> */}
       {/* <StudentApproval /> */}
       {/* <Sidebar /> */}
-      {/* <StudentLogin /> */}
+      <StudentLogin />
       <CounsDashboard />
       
     </div>
