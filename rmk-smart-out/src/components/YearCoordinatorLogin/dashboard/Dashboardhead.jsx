@@ -57,8 +57,8 @@ const Dashboardhead = () => {
             <h2>Year Coordinator Name</h2>
             <a href="mailto:annalakshmi@gmail.com">annalakshmi@gmail.com</a>
             <p>
-              Number of Students: 121 &nbsp; <span className="dot">•</span> &nbsp;
-              Degree: B.Tech - Information Technology &nbsp; <span className="dot">•</span> &nbsp;
+              Number of Students: 121 &nbsp; <span>|</span> &nbsp;
+              Degree: B.Tech - Information Technology &nbsp; <span >|</span> &nbsp;
               College: R.M.K. Group of Institutions
             </p>
           </div>

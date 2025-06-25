@@ -7,12 +7,13 @@ import { useState } from "react";
 import styled from 'styled-components';
 
 const Sidebar = () => {
-  const sidebarContents=[
+  const sidebarContents=
+  [
+  
     {icon:<MdSpaceDashboard/>,name:"DASHBOARD"},
-    {icon:<BiSolidUserDetail/>,name:"STUDENTS DETAILS"},
-    {icon:<MdOutlineAppRegistration/>,name:"APPROAL LIST"},
+    {icon:<MdOutlineAppRegistration/>,name:"APPROVAL LIST"},
     {icon:<BiBarChartSquare/>,name:"VERDICTS"},
-    {icon:<BsListCheck />,name:"ATTENDANCE"},
+    
   ]
 
   const HoverLi=styled.li 
@@ -45,7 +46,7 @@ const Sidebar = () => {
               </HoverLi>
           )})
         }
-        
+
         </ul>
       </div>
       <div>
