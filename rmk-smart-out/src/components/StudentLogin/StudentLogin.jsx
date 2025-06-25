@@ -5,7 +5,7 @@ const StudentLogin = () => {
 
   const [isChecked,setIsChecked]= useState(false);
   return (
-    <div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"rgba(27, 180, 109, 1)"}}>
+    <div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"rgba(27, 180, 109, 1)" }}>
         <div style={{width:"95%",height:"88%",backgroundColor:"white",borderRadius:"30px",boxShadow:"2px 2px 40px  rgba(0, 0, 0, 0.5 )",display:"flex"}}>
             {/* image part */}
             <div style={{width:"50%",height:"100%",display:"flex",justifyContent:"center",alignItems:"center",borderRight:"4px solid black"}}>
