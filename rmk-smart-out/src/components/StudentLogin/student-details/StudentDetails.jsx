@@ -30,7 +30,7 @@ const StudentDetails = () => {
             </div>
             <div className="innerframe">
                 <div className="container2">
-                    <img src={RmkLogo} width="9%" height="9%" alt="rmklogo" style={{ padding: "0.5%", border: "1px solid black" }}></img>
+                    <img src={RmkLogo} width="9%" height="9%" alt="rmklogo" style={{ padding: "0.5%" }}></img>
                     <h1 className="dept1">INFORMATION TECHNOLOGY</h1>
                 </div>
                 <div className="title">
@@ -50,11 +50,11 @@ const StudentDetails = () => {
                             <table className="table1">
                                 <thead>
                                     <tr>
-                                        <th style={{ padding: '1% 0.5% 1% 1%', width: "9%" }}>S.NO</th>
-                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>NAME</th>
-                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>REG.NO.</th>
-                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>E-MAIL</th>
-                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%" }}>CONTROL</th>
+                                        <th style={{ padding: '1% 0.5% 1% 1%', width: "9%"}}>S.NO</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%"}}>NAME</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%"}}>REG.NO.</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%"}}>E-MAIL</th>
+                                        <th style={{ padding: '1% 0.5% 1% 0%', width: "9%"}}>CONTROL</th>
                                     </tr>
                                 </thead>
                                 <tbody>

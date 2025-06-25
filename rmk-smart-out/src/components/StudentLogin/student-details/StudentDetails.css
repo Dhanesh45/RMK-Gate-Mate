@@ -8,20 +8,17 @@
     width: 15%;
     height: 100vh;
     background-color: white;
-    border: 1px solid black;
 }
 
 .innerframe {
     width: 85%;
     height: 100vh;
     background-color:rgba(238, 238, 238, 0.5);
-    border: 1px solid black;
 }
 
 .container2 {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
 .dept1 {
@@ -29,7 +26,6 @@
     font-size: 15px;
     font-weight: bolder;
     padding: 1.5% 0% 0% 0%;
-    border: 1px solid black;
 }
 
 .title {
@@ -39,7 +35,6 @@
 .title1 {
     color: rgba(14, 73, 71, 1);
     font-size: 20px;
-    border: 1px solid black;
     font-weight: bolder;
 }
 
