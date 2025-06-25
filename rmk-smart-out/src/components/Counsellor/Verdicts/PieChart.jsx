@@ -54,7 +54,7 @@ const CustomPieChart = () => (
 
     {/* Custom Legend */}
     <div style={{ fontSize: '14px', color: '#333' }}>
-      <span style={{ color: '#166F1A', fontWeight: 'bold' }}>APPROVED – 36 </span>
+      <span style={{ color: '#166F1A', fontWeight: 'bold' }}>APPROVED – 118 </span>
       &nbsp; &nbsp;
       <span style={{ color: '#7AD75E', fontWeight: 'bold' }}>REJECTED – 6</span>
     </div>
