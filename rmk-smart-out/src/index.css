@@ -8,3 +8,14 @@
 body{
     background-color:rgba(238, 238, 238, 1);
 }
+/* Add this to your global CSS or App.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
