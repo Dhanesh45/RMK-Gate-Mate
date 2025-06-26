@@ -33,22 +33,22 @@ const Dashboard = () => {
                 <div className="frame-section">
                     <div className="frame-row">
                         <div className="frame-box">
-                            <p>Principal</p>
+                            <p>PRINCIPAL</p>
                             <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Principal" />
                             <strong>Dr. K.A. Mohamed Junaid</strong>
                         </div>
                         <div className="frame-box">
-                            <p>Head of Department</p>
+                            <p>HEAD OF DEPARTMENT</p>
                             <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="HOD" />
                             <strong>Dr. M. Sheerin Banu</strong>
                         </div>
                         <div className="frame-box">
-                            <p>Year Coordinator</p>
+                            <p>YEAR COORDINATOR</p>
                             <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Year Coordinator" />
                             <strong>Dr. A. Annalakshmi</strong>
                         </div>
                         <div className="frame-box">
-                            <p>Counsellor</p>
+                            <p>COUNSELLOR</p>
                             <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Counsellor" />
                             <strong>Dr. M. Sheerin Banu</strong>
                         </div>
