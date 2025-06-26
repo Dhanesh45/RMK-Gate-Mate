@@ -34,7 +34,7 @@ const Sidebar = () => {
     <div style={{width:"15%",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between",borderRadius:"0% 15px 15px 0%",backgroundColor:"white"}}>
       <div>
         <div>
-        <h3 style={{padding:"5% 0% 10% 5%"}}>COUNSELLOR</h3>
+        <h3 style={{padding:"5% 0% 10% 5%"}}>YEAR CO ORDINATOR</h3>
         </div>
         <ul style={{}}>
         {
