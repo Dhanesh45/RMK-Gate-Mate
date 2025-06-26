@@ -3,7 +3,7 @@ import RmkLogo from '../../../assets/LandingPageimg/rmklogo.png'
 import DashPhoto from "../../../assets/HodLoginimg/Greenforest.jpg"
 import ProfilePhoto from "../../../assets/HodLoginimg/profile.png"
 
-const HodDashboard = () => {
+const HodDash = () => {
 
     return (
         <div style={{ width: "100%", height: "100vh", display: "flex" }}>
@@ -47,4 +47,4 @@ const HodDashboard = () => {
         </div>
     )
 }
-export default HodDashboard
+export default HodDash
