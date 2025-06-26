@@ -5,7 +5,7 @@ import rmklogo from "../../../assets/LandingPageimg/rmklogo.png";
 const Dashboard = () => {
     return (
         <div className="maincontainer">
-            <STUsideBar/>
+            <STUsideBar />
             <div className="innercontent">
                 <div className="head">
                     <img src={rmklogo} className='logoo' />
@@ -42,20 +42,20 @@ const Dashboard = () => {
                             <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="HOD" />
                             <strong>Dr. M. Sheerin Banu</strong>
                         </div>
-                            <div className="frame-box">
-                                <p>Year Coordinator</p>
-                                <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Year Coordinator" />
-                                <strong>Dr. A. Annalakshmi</strong>
-                            </div>
-                            <div className="frame-box">
-                                <p>Counsellor</p>
-                                <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Counsellor" />
-                                <strong>Dr. M. Sheerin Banu</strong>
-                            </div>
+                        <div className="frame-box">
+                            <p>Year Coordinator</p>
+                            <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Year Coordinator" />
+                            <strong>Dr. A. Annalakshmi</strong>
+                        </div>
+                        <div className="frame-box">
+                            <p>Counsellor</p>
+                            <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Counsellor" />
+                            <strong>Dr. M. Sheerin Banu</strong>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     );
 };
 
