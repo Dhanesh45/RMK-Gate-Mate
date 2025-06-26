@@ -1,0 +1,45 @@
+import React from "react"
+import RmkLogo from '../../../assets/LandingPageimg/rmklogo.png'
+import DashPhoto from "../../../assets/HodLoginimg/Greenforest.jpg"
+import ProfilePhoto from "../../../assets/HodLoginimg/profile.png"
+
+const HodDashboard = () => {
+
+    return (
+        <div style={{ width: "100%", height: "100vh", display: "flex" }}>
+            <div style={{ width: "15%", height: "100vh", border: "1px solid black" }}>
+                {/* sidebar */}
+            </div>
+            <div style={{ width: "85%", height: "100vh", backgroundColor: "rgba(238, 238, 238, 0.5)" }}>
+                {/* header */}
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                    <img src={RmkLogo} alt="rmklogo" width="9%" height="9%" style={{ padding: "0.5%" }}></img>
+                    <h1 style={{ padding: "1% 1% 0% 0%", color: "rgba(14, 73, 71, 1)", fontSize: "15px", fontWeight: "bolder" }}>INFORMATION TECHNOLOGY</h1>
+                </div>
+                {/* Hod profile */}
+                <div style={{ width: "100%", height: "50%", border: "1px solid black", justifyItems: "center" }}>
+                    <div style={{ width: "95%", height: "100%", border: "1px solid black", backgroundColor: "white", borderRadius: "20px", position: "relative" }}>
+                        <div style={{ width: "100%", height: "45%" }}>
+                            <img src={DashPhoto} alt="dashphoto" style={{ borderRadius: "20px", width: "100%", height: "100%" }} ></img>
+                        </div>
+                        <div style={{ width: "10%", height: "35%", position: "absolute", left: "7%", top: "24%", border: "1px solid black" }}>
+                            <img src={ProfilePhoto} alt="profilephoto" style={{ width: "100%", height: "100%", borderRadius: "50%", border: "10px solid white" }}></img>
+                        </div>
+                        <div style={{ width: "100%", height: "54%", border: "1px solid black", padding: "4% 0% 0% 7%" }}>
+                            <h1 style={{ paddingBottom: "1%", fontSize: "25px", fontWeight: "bold" }}>HOD NAME</h1>
+                            <p style={{ paddingBottom: "3.5%", fontSize: "15px", color: "gray" }}>hod@gmail.com</p>
+                            <p style={{ fontSize: "15px", fontWeight: "600" }}> Number of Students: 121   |   Degree : B.Tech - Information Technology  |   College :R.M.K. Group of Institutions</p>
+                        </div>
+                    </div>
+                </div>
+                {/* charts */}
+                <div style={{}}>
+
+                </div>
+
+            </div>
+
+        </div>
+    )
+}
+export default HodDashboard
