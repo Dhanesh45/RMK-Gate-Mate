@@ -100,11 +100,8 @@
 
 .frame-row {
   display: flex;
-  
   gap:3.8%;
   margin-top: 1%;
- 
-  
 }
 
 .frame-box {

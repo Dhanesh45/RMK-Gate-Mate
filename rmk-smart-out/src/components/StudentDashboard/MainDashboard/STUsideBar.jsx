@@ -10,10 +10,9 @@ import styled from 'styled-components';
 const STUsideBar = () => {
     const sidebarContents = [
         { icon: <MdSpaceDashboard />, name: "DASHBOARD" },
-        { icon: <BiSolidUserDetail />, name: "STUDENTS DETAILS" },
-        { icon: <MdOutlineAppRegistration />, name: "APPROAL LIST" },
-        { icon: <BiBarChartSquare />, name: "VERDICTS" },
-        { icon: <BsListCheck />, name: "ATTENDANCE" },
+        { icon: <BiSolidUserDetail />, name: "GENERAL OUTPASS" },
+        { icon: <MdOutlineAppRegistration />, name: "SPECIAL OUTPASS" },
+        { icon: <BiBarChartSquare />, name: "ON DUTY FORM" },
     ]
 
     const HoverLi = styled.li`
