@@ -2,6 +2,8 @@ import React from "react"
 import RmkLogo from '../../../assets/LandingPageimg/rmklogo.png'
 import DashPhoto from "../../../assets/HodLoginimg/Greenforest.jpg"
 import ProfilePhoto from "../../../assets/HodLoginimg/profile.png"
+import AttendanceChart from "./AttendanceChart"
+import OutpassChart from "./OutpassChart"
 
 const HodDash = () => {
 
@@ -36,9 +38,11 @@ const HodDash = () => {
                 <div style={{ width: "100%", height: "42%", display: "flex", justifyContent: "space-between", border: "1px solid black", padding: "2% 2.5% 2% 2.5%" }}>
                     <div style={{ width: "40%", height: "97%", backgroundColor: "white", borderRadius: "20px" }}>
                         <h4 style={{padding:"1% 0% 0% 1%"}}>ATTENDANCE</h4>
+                        <AttendanceChart />
                     </div>
                     <div style={{ width: "55%", height: "97%", backgroundColor: "white", borderRadius: "20px", }}>
                         <h4 style={{padding:"1% 0% 0% 1%"}}>OUTPASS TRACKER</h4>
+                        <OutpassChart />
                     </div>
                 </div>
 
