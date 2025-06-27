@@ -38,8 +38,8 @@ const OutpassChart = () => {
                             data={data}
                             cx="50%"
                             cy="50%"
-                            innerRadius={60}  // decreased from 70
-                            outerRadius={85}  // decreased from 100
+                            innerRadius={60}  
+                            outerRadius={85}  
                             paddingAngle={3}
                             dataKey="value"
                             startAngle={90}
