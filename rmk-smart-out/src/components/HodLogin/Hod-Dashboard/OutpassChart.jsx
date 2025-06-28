@@ -4,12 +4,12 @@ import {
 } from 'recharts';
 
 const data = [
-    { name: 'Pending', value: 12 },
-    { name: 'Approved', value: 45 },
-    { name: 'Rejected', value: 9 },
+    { name: 'Pending', value: 48 },
+    { name: 'Approved', value: 300 },
+    { name: 'Rejected', value: 12 },
 ];
 
-const COLORS = ['#FFBB28', '#00BFA6', '#EF4C8B'];
+const COLORS = ['rgba(14, 73, 71, 1)', 'rgba(153, 220, 179, 1)', 'rgba(82, 179, 134, 1)'];
 
 const OutpassChart = () => {
     const total = data.reduce((acc, curr) => acc + curr.value, 0);

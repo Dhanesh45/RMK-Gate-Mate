@@ -16,8 +16,8 @@ const data = [
 const AttendanceChart = () => {
   return (
     <div style={{
-      width: '100%',
-      height: '90%',
+      width: '95%',
+      height: '85%',
       backgroundColor: 'white',
       borderRadius: '15px',
       display: 'flex',
@@ -36,7 +36,7 @@ const AttendanceChart = () => {
           <div style={{
             width: '12px',
             height: '12px',
-            backgroundColor: '#00BFA6',
+            backgroundColor: 'rgba(14, 73, 71, 1)',
             borderRadius: '50%',
             marginRight: '6px'
           }}></div>
@@ -46,7 +46,7 @@ const AttendanceChart = () => {
           <div style={{
             width: '12px',
             height: '12px',
-            backgroundColor: '#EF4C8B',
+            backgroundColor: 'rgba(82, 179, 134, 1)',
             borderRadius: '50%',
             marginRight: '6px'
           }}></div>
@@ -59,11 +59,11 @@ const AttendanceChart = () => {
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="day" fontSize={12} />
-            <YAxis domain={[0, 100]} tickFormatter={(value) => `${value}%`} fontSize={12} />
+            <XAxis dataKey="day" fontSize={10} />
+            <YAxis domain={[0, 100]} tickFormatter={(value) => `${value}%`} fontSize={10} />
             <Tooltip formatter={(value) => `${value}%`} />
-            <Line type="monotone" dataKey="present" stroke="#00BFA6" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="absent" stroke="#EF4C8B" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="present" stroke="rgba(14, 73, 71, 1)" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="absent" stroke="rgba(82, 179, 134, 1)" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>

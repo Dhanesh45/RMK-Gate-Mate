@@ -25,23 +25,23 @@ const HodDash = () => {
                             <img src={DashPhoto} alt="dashphoto" style={{ borderRadius: "20px", width: "100%", height: "100%" }} ></img>
                         </div>
                         <div style={{ width: "10%", height: "35%", position: "absolute", left: "7%", top: "24%", border: "1px solid black" }}>
-                            <img src={ProfilePhoto} alt="profilephoto" style={{ width: "100%", height: "100%", borderRadius: "50%", border: "10px solid white" }}></img>
+                            <img src={ProfilePhoto} alt="profilephoto" style={{ width: "100%", height: "100%", borderRadius: "50%", border: "7px solid white" }}></img>
                         </div>
                         <div style={{ width: "100%", height: "54%", border: "1px solid black", padding: "4% 0% 0% 7%" }}>
                             <h1 style={{ paddingBottom: "1%", fontSize: "25px", fontWeight: "bold" }}>HOD NAME</h1>
-                            <p style={{ paddingBottom: "3.5%", fontSize: "15px", color: "gray" }}>hod@gmail.com</p>
+                            <p style={{ paddingBottom: "2.5%", fontSize: "15px", color: "gray" }}>hod@gmail.com</p>
                             <p style={{ fontSize: "15px", fontWeight: "600" }}> Number of Students: 121   |   Degree : B.Tech - Information Technology  |   College :R.M.K. Group of Institutions</p>
                         </div>
                     </div>
                 </div>
                 {/* charts */}
                 <div style={{ width: "100%", height: "42%", display: "flex", justifyContent: "space-between", border: "1px solid black", padding: "2% 2.5% 2% 2.5%" }}>
-                    <div style={{ width: "40%", height: "97%", backgroundColor: "white", borderRadius: "20px" }}>
-                        <h4 style={{padding:"1% 0% 0% 1%"}}>ATTENDANCE</h4>
+                    <div style={{ width: "42.5%", height: "97%", backgroundColor: "white", borderRadius: "20px" }}>
+                        <h4 style={{padding:"2% 0% 0% 2%",fontWeight:"bold"}}>ATTENDANCE</h4>
                         <AttendanceChart />
                     </div>
                     <div style={{ width: "55%", height: "97%", backgroundColor: "white", borderRadius: "20px", }}>
-                        <h4 style={{padding:"1% 0% 0% 1%"}}>OUTPASS TRACKER</h4>
+                        <h4 style={{padding:"2% 0% 0% 2%",fontWeight:"bold"}}>OUTPASS TRACKER</h4>
                         <OutpassChart />
                     </div>
                 </div>
