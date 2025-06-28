@@ -17,22 +17,25 @@ const AttendanceChart = () => {
   return (
     <div style={{
       width: '100%',
-      height: '85%',
+      height: '90%',
       backgroundColor: 'white',
       borderRadius: '15px',
-      
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
     }}>
-      {/* Centered Present/Absent Labels */}
+      
+      {/* Present / Absent Legend */}
       <div style={{
         display: 'flex',
         justifyContent: 'center',
-        gap: '30px',
-
+        gap: '6%',
+        marginTop: '2%',
       }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{
-            width: '10px',
-            height: '10px',
+            width: '12px',
+            height: '12px',
             backgroundColor: '#00BFA6',
             borderRadius: '50%',
             marginRight: '6px'
@@ -41,8 +44,8 @@ const AttendanceChart = () => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{
-            width: '10px',
-            height: '10px',
+            width: '12px',
+            height: '12px',
             backgroundColor: '#EF4C8B',
             borderRadius: '50%',
             marginRight: '6px'
@@ -51,17 +54,19 @@ const AttendanceChart = () => {
         </div>
       </div>
 
-      {/* Line Chart */}
-      <ResponsiveContainer width="100%" height={190}>
-        <LineChart data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="day" fontSize={12} />
-          <YAxis domain={[0, 100]} tickFormatter={(value) => `${value}%`} fontSize={12} />
-          <Tooltip formatter={(value) => `${value}%`} />
-          <Line type="monotone" dataKey="present" stroke="#00BFA6" strokeWidth={2} dot={false} />
-          <Line type="monotone" dataKey="absent" stroke="#EF4C8B" strokeWidth={2} dot={false} />
-        </LineChart>
-      </ResponsiveContainer>
+      {/* Line Chart Section */}
+      <div style={{ width: '100%', height: '80%' }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <LineChart data={data}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="day" fontSize={12} />
+            <YAxis domain={[0, 100]} tickFormatter={(value) => `${value}%`} fontSize={12} />
+            <Tooltip formatter={(value) => `${value}%`} />
+            <Line type="monotone" dataKey="present" stroke="#00BFA6" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="absent" stroke="#EF4C8B" strokeWidth={2} dot={false} />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };

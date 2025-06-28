@@ -38,8 +38,8 @@ const OutpassChart = () => {
                             data={data}
                             cx="50%"
                             cy="50%"
-                            innerRadius={60}  
-                            outerRadius={85}  
+                            innerRadius="70%"   
+                            outerRadius="100%"   
                             paddingAngle={3}
                             dataKey="value"
                             startAngle={90}
@@ -73,26 +73,26 @@ const OutpassChart = () => {
                 fontSize: '15px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '12px'
+                gap: '8%',
             }}>
                 <table style={{
                     width: '100%',
                     borderCollapse: 'separate',
-                    borderSpacing: '0 12px',
+                    borderSpacing: '0 8%',
                 }}>
                     <thead>
                         <tr style={{ textAlign: 'left', fontSize: '16px' }}>
-                            <th style={{ paddingBottom: '6px' }}>Status</th>
-                            <th style={{ paddingBottom: '6px' }}>Count</th>
-                            <th style={{ paddingBottom: '6px' }}>%</th>
+                            <th style={{ paddingBottom: '4%' }}>Status</th>
+                            <th style={{ paddingBottom: '4%' }}>Count</th>
+                            <th style={{ paddingBottom: '4%' }}>%</th>
                         </tr>
                     </thead>
                     <tbody>
                         {data.map((entry, index) => (
                             <tr key={index}>
-                                <td style={{ color: COLORS[index], fontWeight: 'bold', paddingBottom: '8px' }}>{entry.name}</td>
-                                <td style={{ paddingBottom: '8px' }}>{entry.value}</td>
-                                <td style={{ paddingBottom: '8px' }}>{((entry.value / total) * 100).toFixed(1)}%</td>
+                                <td style={{ color: COLORS[index], fontWeight: 'bold', paddingBottom: '4%' }}>{entry.name}</td>
+                                <td style={{ paddingBottom: '4%' }}>{entry.value}</td>
+                                <td style={{ paddingBottom: '4%' }}>{((entry.value / total) * 100).toFixed(1)}%</td>
                             </tr>
                         ))}
                     </tbody>
