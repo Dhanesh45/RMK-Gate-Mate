@@ -49,11 +49,10 @@
 .frame-row {
   display: flex;
   justify-content: center;
-  padding-top: 4.9%;
-  padding-left:2.6%;
-  gap:5.7%;
-  width: 95%;
-  height: 27%;
+  gap:3.9%;
+  padding: 4.1%;
+  width: 91.4%;
+  height: 23%;
 }
 
 .frame-box {
@@ -62,9 +61,7 @@
   align-items: center;
   background-color: white;
   border-radius: 18px;
-  height: 83%;
-  width: 20%;
-    flex: 1 1 200px; /* minimum width of 200px and grow */
+  width: 30%;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.236);
   border: #000000;
@@ -78,6 +75,7 @@
 }
 
 .frame-box p {
+  padding-top: 2%;
   font-size: 12px;
   color: #000000;
   font-weight: 600;
