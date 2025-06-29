@@ -1,7 +1,7 @@
 import React from 'react'
 import './Dashboard.css';
 import dashphoto from '../../../assets/Dashboardimg/dhashimg1.jpg';
-import profilephoto from '../../../assets/Dashboardimg/dhashimg2.jpg';
+import profilephoto from '../../../assets/Dashboardimg/dashimg3.webp';
 import STUsideBar from './STUsideBar';
 import rmklogo from "../../../assets/LandingPageimg/rmklogo.png";
 const Dashboard = () => {
@@ -19,7 +19,7 @@ const Dashboard = () => {
                         <img src={dashphoto} alt=""  style={{width:"100%",height:"100%",borderRadius:"20px 20px 20px 20px"}}/>
                     </div>
                     <div style={{position:"absolute",width:"10%",height:"35%",top:"20%",left:"10%"}}>
-                        <img src={profilephoto} alt="" style={{width:"100%",height:"100%",borderRadius:"50%",border:"10px solid white"}}/>
+                        <img src={profilephoto} alt="" style={{width:"100%",height:"100%",borderRadius:"50%",border:"10px solid white",objectFit:"cover"}}/>
                     </div>
                     <div style={{width:"100%",height:"50%",padding:"5% 0% 0% 8%"}}>
                         <h1 style={{paddingBottom:"0.75%",fontSize:"25px",fontWeight:"550"}}>YEAR CO ORDINATOR NAME</h1>
