@@ -30,7 +30,6 @@ const Dashboard = () => {
                     </p>
                 </div>
 
-                <div className="frame-section">
                     <div className="frame-row">
                         <div className="frame-box">
                             <p>PRINCIPAL</p>
@@ -55,7 +54,6 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
