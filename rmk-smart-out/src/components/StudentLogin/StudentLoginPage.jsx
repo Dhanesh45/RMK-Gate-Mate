@@ -1,7 +1,7 @@
 import { useState } from "react"
 import loginimg from "../../assets/StudentLoginimg/loginimg.jpg"
 
-const CounsellorLoginPage = () => {
+const StudentLoginPage = () => {
 
   const [isChecked,setIsChecked]= useState(false);
   return (
@@ -14,12 +14,15 @@ const CounsellorLoginPage = () => {
 
             {/* Form part */}
             <div style={{width:"50%",height:"100%",padding:"2% 0%"}}>
-                <h1 style={{textAlign:"center",fontWeight:"800",fontSize:"40px",color:"rgba(14, 73, 71, 1)",paddingBottom:"3%"}}>COUNSELLOR LOGIN</h1>
-                <p  style={{textAlign:"center",fontSize:"20px",paddingBottom:"1%",fontWeight:"600",color:"rgba(17,73,71,1)"}}>Welcome to counsellor details Login to access your account</p>
+                <h1 style={{textAlign:"center",fontWeight:"800",fontSize:"40px",color:"rgba(14, 73, 71, 1)",paddingBottom:"3%"}}>STUDENT LOGIN</h1>
+                <p  style={{textAlign:"center",fontSize:"20px",paddingBottom:"1%",fontWeight:"600",color:"rgba(17,73,71,1)"}}>Welcome to student details Login to access your account</p>
 
                 {/* input feilds */}
                 <div style={{padding:"3% 5% 5% 5%"}}>
-                    
+                    <div style={{paddingBottom:"4%"}}>
+                      <p style={{fontSize:"20px",fontWeight:"600",paddingBottom:"0.8%",color:"rgba(14, 73, 71, 1)"}}>REGISTER NUMBER</p>
+                      <input type="number" style={{width:"97%",padding:"1.25%",borderRadius:"5px",border:"1px solid rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"500"}}/>
+                    </div>
                     <div style={{paddingBottom:"4%"}}>
                       <p style={{fontSize:"20px",fontWeight:"600",paddingBottom:"0.8%",color:"rgba(14, 73, 71, 1)"}}>EMAIL</p>
                       <input type="email" style={{width:"97%",padding:"1.25%",borderRadius:"5px",border:"1px solid rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"500"}}/>
@@ -60,4 +63,4 @@ const CounsellorLoginPage = () => {
   )
 }
 
-export default CounsellorLoginPage
+export default StudentLoginPage

@@ -9,7 +9,7 @@ const data = [
 ];
 
 // Corresponding segment colors
-const COLORS = ['#00BDAE', '#7070F3', '#F858B0'];
+const COLORS = ['rgba(82, 179, 134, 1)','rgba(14, 73, 71, 1)','rgba(153, 220, 179, 1)'];
 
 const OutpassChart = () => {
   const total = data.reduce((sum, item) => sum + item.value, 0);
@@ -21,7 +21,7 @@ const OutpassChart = () => {
       justifyContent: 'space-evenly',
       padding: '20px',
       alignItems: 'center',
-      height:"55%",
+      height:"65%",
   
     }}>
       
@@ -54,14 +54,14 @@ const OutpassChart = () => {
           transform: 'translate(-50%, -50%)',
           textAlign: 'center'
         }}>
-          <div style={{ fontSize: '12px', color: '#555' }}>Total Value</div>
+          <div style={{ fontSize: '12px', color: '#555',fontWeight:"bold" }}>Total Value</div>
           <div style={{ fontSize: '24px', fontWeight: 'bold' }}>{total}</div>
         </div>
       </div>
 
       {/* Chart Container Table */}
       <div style={{ width: '48%' }}>
-        <h4 style={{ textAlign: 'center', color: 'gray', marginBottom: '10px' }}>Chart Container</h4>
+        <h4 style={{ textAlign: 'center', color: 'gray', marginBottom: '10px' ,fontWeight:"bold"}}>Chart Container</h4>
         <div style={{ display: 'flex', fontWeight: 'bold', marginBottom: '10px' }}>
           <div style={{ flex: 1 }}>Label</div>
           <div style={{ flex: 1, textAlign: 'center' }}>Value</div>
@@ -78,7 +78,7 @@ const OutpassChart = () => {
                   backgroundColor: COLORS[index],
                   borderRadius: '50%',
                 }} />
-                <span style={{ fontSize: '14px' }}>{entry.name}</span>
+                <span style={{ fontSize: '14px',fontWeight:"bold" }}>{entry.name}</span>
               </div>
               <div style={{ flex: 1, textAlign: 'center', fontWeight: 'bold' }}>{entry.value}</div>
               <div style={{ flex: 1, textAlign: 'right', fontWeight: 'bold' }}>{percentage}%</div>

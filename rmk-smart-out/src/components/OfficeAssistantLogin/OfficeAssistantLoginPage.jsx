@@ -1,7 +1,7 @@
 import { useState } from "react"
 import loginimg from "../../assets/StudentLoginimg/loginimg.jpg"
 
-const CounsellorLoginPage = () => {
+const OfficeAssistantLoginPage = () => {
 
   const [isChecked,setIsChecked]= useState(false);
   return (
@@ -14,8 +14,8 @@ const CounsellorLoginPage = () => {
 
             {/* Form part */}
             <div style={{width:"50%",height:"100%",padding:"2% 0%"}}>
-                <h1 style={{textAlign:"center",fontWeight:"800",fontSize:"40px",color:"rgba(14, 73, 71, 1)",paddingBottom:"3%"}}>COUNSELLOR LOGIN</h1>
-                <p  style={{textAlign:"center",fontSize:"20px",paddingBottom:"1%",fontWeight:"600",color:"rgba(17,73,71,1)"}}>Welcome to counsellor details Login to access your account</p>
+                <h1 style={{textAlign:"center",fontWeight:"800",fontSize:"40px",color:"rgba(14, 73, 71, 1)",paddingBottom:"3%"}}>OFFICE ASSISTANT LOGIN</h1>
+                <p  style={{textAlign:"center",fontSize:"20px",paddingBottom:"1%",fontWeight:"600",color:"rgba(17,73,71,1)"}}>Welcome to Office Assistant details Login to access your account</p>
 
                 {/* input feilds */}
                 <div style={{padding:"3% 5% 5% 5%"}}>
@@ -60,4 +60,4 @@ const CounsellorLoginPage = () => {
   )
 }
 
-export default CounsellorLoginPage
+export default OfficeAssistantLoginPage

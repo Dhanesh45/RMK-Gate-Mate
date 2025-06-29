@@ -40,11 +40,11 @@ const CounsDashboard = () => {
             {/* Visulaization */}
             <div style={{width:"100%",height:"35%",display:"flex",justifyContent:"space-between"}}>
                 <div style={{backgroundColor:"white",borderRadius:"20px",width:"65.5%",height:"95%",margin:"2% 0% 1% 3.5%"}}>
-                    <h4 style={{padding:"2% 0% 0% 3%"}}>OUTPASS TRACKER</h4>
+                    <h4 style={{padding:"2% 0% 0% 2%",fontWeight:"bold"}}>OUTPASS TRACKER</h4>
                     <OutpassChart />
                 </div>
                 <div style={{backgroundColor:"white",borderRadius:"20px",width:"25%",height:"95%",margin:"2% 3.5% 1% 0%",}}>
-                    <h4 style={{padding:"5% 0% 0% 5%"}}>ATTENDANCE</h4>
+                    <h4 style={{padding:"4% 0% 0% 5%",fontWeight:"bold"}}>ATTENDANCE</h4>
                     <AttendanceChart />
                 </div>
             </div>
