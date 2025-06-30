@@ -1,7 +1,6 @@
-import React from 'react';
 import './Attendance.css';
 import rmklogo from "../../../assets/LandingPageimg/rmklogo.png";
-import Sidebar from "./Sidebar";
+
 
 const Attendance = () => {
   const students = [
@@ -20,7 +19,7 @@ const Attendance = () => {
 
   return (
     <div className="container">
-        <Sidebar/>
+        <div style={{width:"15%",height:"100vh"}}></div>
       <div className="content">
         <div className="header">
           <img src={ rmklogo } className='logo'/>

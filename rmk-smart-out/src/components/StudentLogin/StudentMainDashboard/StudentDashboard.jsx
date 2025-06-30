@@ -1,13 +1,13 @@
 import React from 'react'
-import './Dashboard.css';
+import './StudentDashboard.css';
 import dashphoto from '../../../assets/Dashboardimg/dhashimg1.jpg';
 import profilephoto from '../../../assets/Dashboardimg/dashimg3.webp';
-import STUsideBar from './STUsideBar';
+import STUsideBar from './StudentSideBar';
 import rmklogo from "../../../assets/LandingPageimg/rmklogo.png";
 const Dashboard = () => {
     return (
         <div className="maincontainer">
-            <STUsideBar />
+            <div style={{width:"15%",height:"100vh"}}></div>
             <div className="innercontent">
                 <div className="head">
                     <img src={rmklogo} className='logoo' />
@@ -22,9 +22,9 @@ const Dashboard = () => {
                         <img src={profilephoto} alt="" style={{width:"100%",height:"100%",borderRadius:"50%",border:"10px solid white",objectFit:"cover"}}/>
                     </div>
                     <div style={{width:"100%",height:"50%",padding:"5% 0% 0% 8%"}}>
-                        <h1 style={{paddingBottom:"0.75%",fontSize:"25px",fontWeight:"550"}}>YEAR CO ORDINATOR NAME</h1>
-                        <p  style={{paddingBottom:"0.75%",fontSize:"15px",color:"gray"}}>YR CO@gmail.com</p>
-                        <b><p  style={{paddingBottom:"0.75%",fontSize:"15px"}}>Number of Students: 125   |   Degree : B.Tech - Information Technology  |   College :R.M.K. Group of Institutions</p>
+                        <h1 style={{paddingBottom:"0.85%",fontSize:"25px",fontWeight:"550"}}>STUDENT NAME</h1>
+                        <p  style={{paddingBottom:"0.95%",fontSize:"15px",color:"gray"}}>student@gmail.com</p>
+                        <b><p  style={{paddingBottom:"0.5%",fontSize:"15px"}}>Number of Students: 125   |   Degree : B.Tech - Information Technology  |   College :R.M.K. Group of Institutions</p>
                    </b> </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Dashboard = () => {
                     <div className="frame-box">
                         <p>COUNSELLOR</p>
                         <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Counsellor" />
-                        <strong>Dr. M. Sheerin Banu</strong>
+                        <strong>Dr. A. Annalakshmi</strong>
                     </div>
                 </div>
             </div>
