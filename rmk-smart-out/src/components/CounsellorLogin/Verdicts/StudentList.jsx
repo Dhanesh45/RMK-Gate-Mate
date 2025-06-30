@@ -1,3 +1,5 @@
+
+
 const students = [
     { name: "AAKASH M", reg: "111723203001", email: "230508.it@rmkec.ac.in", year: "II & A" },
     { name: "ABHISHEK P", reg: "111723203002", email: "230098.it@rmkec.ac.in", year: "II & A" },
@@ -126,60 +128,65 @@ const students = [
 
   ];
   
-  const StudentList = () => (
-    <div
-      style={{
-        backgroundColor: "white",
-        borderRadius: "10px",
-        border: "2px solid #ccc",
-        overflow: "hidden",
-        maxHeight: "400px", // Adjust height as needed
-        display: "flex",
-        flexDirection: "column"
-      }}
-    >
-      {/* Fixed Header */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "0.5fr 1.5fr 1.5fr 2fr 1fr",
-          fontWeight: "bold",
-          padding: "10px",
-          backgroundColor: "#f3f3f3",
-          borderBottom: "2px solid #ccc",
-          flexShrink: 0,
-        }}
-      >
-        <div>SI</div>
-        <div>NAME</div>
-        <div>REG.NO</div>
-        <div>EMAIL ID</div>
-        <div>YEAR & SEC</div>
+  const thStyle = {
+  position: "sticky",
+  top: 0,
+  backgroundColor: "white",
+  zIndex: 1,
+  padding: "0.75%",
+};
+
+const tdStyle = {
+  padding: "10px",
+  textAlign: "center",
+};
+
+const StudentList = () => (
+  <div style={{ width: "100%", height: "100%", backgroundColor: "rgba(238, 238, 238, 0.5)" }}>
+
+      
+        <div
+          style={{
+            backgroundColor: "rgba(217, 217, 217, 1)",
+            width: "96%",
+            height: "100%",
+            overflowY: "auto",
+            margin: "0.5% auto",
+            border: "8px solid rgba(217, 217, 217, 1)",
+            borderRadius: "10px",
+          }}
+        >
+          <table style={{ borderCollapse: "collapse", width: "100%" }}>
+            <thead>
+              <tr style={{ borderBottom: "8px solid rgba(217, 217, 217, 1)" }}>
+                <th style={thStyle}>S.NO</th>
+                <th style={thStyle}>NAME</th>
+                <th style={thStyle}>REGISTER NUMBER</th>
+                <th style={thStyle}>EMAIL ID</th>
+                <th style={thStyle}>YEAR & SEC</th>
+              </tr>
+            </thead>
+            <tbody>
+              {students.map((s, index) => (
+                <tr
+                  key={index}
+                  style={{
+                    backgroundColor: "white",
+                    borderBottom: "8px solid rgba(217, 217, 217, 1)",
+                  }}
+                >
+                  <td style={tdStyle}>{index + 1}</td>
+                  <td style={tdStyle}>{s.name}</td>
+                  <td style={tdStyle}>{s.reg}</td>
+                  <td style={tdStyle}>{s.email}</td>
+                  <td style={tdStyle}>{s.year}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-  
-      {/* Scrollable Rows */}
-      <div style={{ overflowY: "auto", flex: 1 }}>
-        {students.map((s, index) => (
-          <div
-            key={index}
-            style={{
-              display: "grid",
-              gridTemplateColumns: "0.5fr 1.5fr 1.5fr 2fr 1fr",
-              padding: "10px",
-              borderBottom: "1px solid #eee",
-  
-            }}
-          >
-            <div>{index + 1}.</div>
-            <div>{s.name}</div>
-            <div>{s.reg}</div>
-            <div>{s.email}</div>
-            <div>{s.year}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-  
-  export default StudentList;
-  
+
+);
+
+export default StudentList;

@@ -8,15 +8,13 @@ import StudentList from "./StudentList.jsx";
 const VerdictsPage = () => (
   <div
     style={{
-      marginLeft:"20px",
-      marginRight:"20px",
       display: "flex",
-      
       flexDirection: "column",
-      gap: "10px",
-      width: "100%",
-      height: "auto",
+      
+      width: "85%",
+      height: "100vh",
       boxSizing: "border-box",
+
     }}
   >
     {/* Header */}
@@ -31,16 +29,16 @@ const VerdictsPage = () => (
         <img
           src={rmklogo}
           alt="RMK Logo"
-          style={{ width: "45%", height: "auto", border:"1px solid black" }}
+          style={{ width: "45%", height: "auto"}}
         />
       </div>
-      <h2 style={{textAlign: "end",color:"rgba(14, 73, 71, 1)", fontSize:"15px" }}>
+      <h2 style={{textAlign: "end",color:"rgba(14, 73, 71, 1)", fontSize:"15px",fontWeight:"bold" , padding:"1% 1% 0% 0%"}}>
         INFORMATION TECHNOLOGY
       </h2>
     </div>
 
     {/* Page Title */}
-    <h3 style={{ textAlign: "center",color:"rgba(14, 73, 71, 1)", fontSize:"20px" }}>VERDICTS</h3>
+    <h3 style={{ textAlign: "center",color:"rgba(14, 73, 71, 1)", fontSize:"20px",fontWeight:"bold" }}>VERDICTS</h3>
 
     {/* Charts Container */}
     <div
@@ -49,8 +47,7 @@ const VerdictsPage = () => (
         justifyContent: "space-between",
         alignItems: "flex-start",
         gap: "20px",
-        marginTop: "5px",
-        marginBottom: "10px",
+        margin:"1% 2% 1% 2%"
       }}
     >
       <VerdictChart />
@@ -58,7 +55,9 @@ const VerdictsPage = () => (
     </div>
 
     {/* Student Table */}
-    <StudentList />
+    <div style={{width:"100%",height:"49%",display:"flex",justifyContent:"center",alignItems:"center"}}>
+      <StudentList />
+    </div>
   </div>
 );
 

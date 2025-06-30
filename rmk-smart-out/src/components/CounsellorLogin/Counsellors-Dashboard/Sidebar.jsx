@@ -3,10 +3,12 @@ import { MdSpaceDashboard ,MdOutlineAppRegistration } from "react-icons/md";
 import { BsListCheck } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import { useState } from "react";
-import styled from 'styled-components';
+import { useNavigate } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({setActivePage}) => {
+
+  const navigate=useNavigate();
+
   const sidebarContents=[
     {icon:<MdSpaceDashboard/>,name:"DASHBOARD"},
     {icon:<BiSolidUserDetail/>,name:"STUDENTS DETAILS"},
@@ -14,46 +16,34 @@ const Sidebar = () => {
     {icon:<BiBarChartSquare/>,name:"VERDICTS"},
     {icon:<BsListCheck />,name:"ATTENDANCE"},
   ]
-
-  const HoverLi=styled.li `
-    display:flex;
-    gap:5px;
-    list-style:none;
-    padding:5%;
-    &:hover{
-      background-color:rgba(14, 73, 71, 1);
-      color:white;
-    }
-  }
-`;
-  const [click,setClick]=useState(false);
-
-  return (
+ return (
     <div style={{width:"15%",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between",borderRadius:"0% 15px 15px 0%",backgroundColor:"white"}}>
       <div>
-        <div>
-        <h3 style={{padding:"5% 0% 10% 5%"}}>COUNSELLOR</h3>
+        <div className="flex justify-center items-center w-[100%] ">
+        <h3 style={{padding:"5% 0% 10% 0%",fontWeight:"bold",fontSize:"22px",textAlign:"center"}}>COUNSELLOR</h3>
         </div>
-        <ul style={{}}>
-        {
-          sidebarContents.map((content)=>{
-            return(
-              <HoverLi>
-                <li style={{}}>{content.icon}</li>
-                <li style={{fontSize:"90%",fontWeight:"bold"}}>{content.name}</li>
-              </HoverLi>
-          )})
-        }
+        <ul>
+          {sidebarContents.map((content, index) => (
+            <li
+              key={index}
+              className="flex gap-[3%] list-none p-[5%] hover:bg-[#0E4947] hover:text-white rounded cursor-pointer"
+              onClick={() => setActivePage(content.name)}
+            >
+              <span className="pt-[1%] text-xl font-bold">{content.icon}</span>
+              <span className="text-l font-bold">{content.name}</span>
+            </li>
+          ))}
         </ul>
+
       </div>
       <div>
         <div style={{padding:"5% 0% 0% 0%",display:'flex',gap:"4px",alignItems:"center",justifyContent:"center"}}>
-          <div>
-            <CgProfile />
+          <div className="">
+            <CgProfile className="w-7 h-7"/>
           </div> 
-          <h5>COUNSELLOR</h5>
+          <h5 className="text-xl font-bold">COUNSELLOR</h5>
         </div>
-        <button style={{margin:"10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center"}}>
+        <button style={{margin:"10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center"}} onClick={()=>navigate("/ComLogin")}>
           <IoIosLogOut />
           LOGOUT
         </button>
