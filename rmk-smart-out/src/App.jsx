@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-
 import LandingPage from "./components/LandingPage/LandingPage"
 import CommonLogin from "./components/LandingPage/CommonLogin"
 import CounsDashboard from "./components/CounsellorLogin/Counsellors-Dashboard/CounsDashboard"
@@ -23,8 +22,7 @@ const App = () => {
           <Route path="/HodLoginPage" element={<HodLoginPage />}/> 
           <Route path="/OfficeAssistantLoginPage" element={<OfficeAssistantLoginPage />}/>
         </Routes>
-     </BrowserRouter>
-      
+     </BrowserRouter> 
     </div>
   )
 }
