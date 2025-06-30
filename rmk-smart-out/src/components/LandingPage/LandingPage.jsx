@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 import LandingPagebg from "../../assets/LandingPageimg/landbg.jpg"
 import rmklogo from "../../assets/LandingPageimg/rmklogo.png"
 
@@ -21,7 +21,7 @@ const LandingPage = () => {
           </div>
           <div style={{textAlign:"center"}}>
             <p style={{fontSize:"20px",fontWeight:"bold",padding:"5%"}}>Our web application is a smart solution designed to streamline the process of outpass requests and attendance management for educational institutions. With a secure login system for students and staff, the platform enables students to request outpasses digitally, while faculty can review, approve, or reject them with ease. It also offers real-time attendance tracking, automated records, and insightful reports — reducing manual paperwork and improving overall efficiency.</p>
-            <button style={{padding:"1% 3% 1% 3%",fontSize:"15px",fontWeight:"bold",color:"white",backgroundColor:"rgba(14, 73, 71, 1)",border:"none",borderRadius:"22px"}}>GET STARTED</button>
+            <Link to="/ComLogin"><button style={{padding:"1% 3% 1% 3%",fontSize:"15px",fontWeight:"bold",color:"white",backgroundColor:"rgba(14, 73, 71, 1)",border:"none",borderRadius:"22px"}}>GET STARTED</button></Link>
           </div>
         </div>
       

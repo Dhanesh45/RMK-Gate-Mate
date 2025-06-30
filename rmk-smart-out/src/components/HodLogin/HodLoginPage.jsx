@@ -1,28 +1,25 @@
 import { useState } from "react"
 import loginimg from "../../assets/StudentLoginimg/loginimg.jpg"
 
-const StudentLogin = () => {
+const HodLoginPage = () => {
 
   const [isChecked,setIsChecked]= useState(false);
   return (
-    <div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"rgba(27, 180, 109, 1)" }}>
-        <div style={{width:"95%",height:"88%",backgroundColor:"white",borderRadius:"30px",boxShadow:"2px 2px 40px  rgba(0, 0, 0, 0.5 )",display:"flex"}}>
+    <div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center",backgroundImage: 'linear-gradient(to right, rgba(27, 180, 109, 1), rgba(11, 78, 47, 1)',  }}>
+        <div style={{width:"92%",height:"88%",backgroundColor:"white",borderRadius:"30px",boxShadow:"2px 2px 40px  rgba(0, 0, 0, 0.9 )",display:"flex"}}>
             {/* image part */}
-            <div style={{width:"50%",height:"100%",display:"flex",justifyContent:"center",alignItems:"center",borderRight:"2px solid black"}}>
+            <div style={{width:"50%",height:"100%",display:"flex",justifyContent:"center",alignItems:"center",borderRight:"1px solid rgba(14,73,71,1) "}}>
               <img src={loginimg} alt="LoginImage" style={{width:"87%",height:"85%"}}/>
             </div>
 
             {/* Form part */}
             <div style={{width:"50%",height:"100%",padding:"2% 0%"}}>
-                <h1 style={{textAlign:"center",fontWeight:"800",fontSize:"40px",color:"rgba(14, 73, 71, 1)",paddingBottom:"3%"}}>STUDENT LOGIN</h1>
-                <p  style={{textAlign:"center",fontSize:"20px",paddingBottom:"1%",fontWeight:"600",color:"rgba(17,73,71,1)"}}>Welcome to student details Login to access your account</p>
+                <h1 style={{textAlign:"center",fontWeight:"800",fontSize:"40px",color:"rgba(14, 73, 71, 1)",paddingBottom:"3%"}}>HEAD OF THE DEPARTMENT LOGIN</h1>
+                <p  style={{textAlign:"center",fontSize:"20px",paddingBottom:"1%",fontWeight:"600",color:"rgba(17,73,71,1)"}}>Welcome to HoD details Login to access your account</p>
 
                 {/* input feilds */}
                 <div style={{padding:"3% 5% 5% 5%"}}>
-                    <div style={{paddingBottom:"4%"}}>
-                      <p style={{fontSize:"20px",fontWeight:"600",paddingBottom:"0.8%",color:"rgba(14, 73, 71, 1)"}}>REGISTER NUMBER</p>
-                      <input type="number" style={{width:"97%",padding:"1.25%",borderRadius:"5px",border:"1px solid rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"500"}}/>
-                    </div>
+                    
                     <div style={{paddingBottom:"4%"}}>
                       <p style={{fontSize:"20px",fontWeight:"600",paddingBottom:"0.8%",color:"rgba(14, 73, 71, 1)"}}>EMAIL</p>
                       <input type="email" style={{width:"97%",padding:"1.25%",borderRadius:"5px",border:"1px solid rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"500"}}/>
@@ -63,4 +60,4 @@ const StudentLogin = () => {
   )
 }
 
-export default StudentLogin
+export default HodLoginPage
