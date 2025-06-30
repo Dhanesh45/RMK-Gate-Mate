@@ -16,6 +16,7 @@ html, body {
   box-sizing: border-box;
 }
 
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

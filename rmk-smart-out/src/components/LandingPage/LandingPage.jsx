@@ -6,7 +6,7 @@ const LandingPage = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${LandingPagebg})`,
+        backgroundImage: url(${LandingPagebg}),
         backgroundSize: "cover",       
         height: "100vh",
         width: "100vw",
