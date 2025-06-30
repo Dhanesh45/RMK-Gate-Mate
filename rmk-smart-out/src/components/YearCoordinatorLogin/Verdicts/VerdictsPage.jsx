@@ -9,6 +9,7 @@ const VerdictsPage = () => (
   <div
     style={{
       marginLeft: "20px",
+      marginRight:"20px",
       display: "flex",
       flexDirection: "column",
       gap: "10px",
@@ -29,10 +30,10 @@ const VerdictsPage = () => (
         <img
           src={rmklogo}
           alt="RMK Logo"
-          style={{ width: "40%", height: "auto" }}
+          style={{ width: "40%", height: "auto", border:"1px solid black" }}
         />
       </div>
-      <h2 style={{textAlign: "end",color:"rgba(14, 73, 71, 1)" }}>
+      <h2 style={{textAlign: "end",color:"rgba(14, 73, 71, 1)", fontSize:"15px"}}>
         INFORMATION TECHNOLOGY
       </h2>
     </div>

@@ -8,8 +8,10 @@ import StudentList from "./StudentList.jsx";
 const VerdictsPage = () => (
   <div
     style={{
-      marginLeft: "20px",
+      marginLeft:"20px",
+      marginRight:"20px",
       display: "flex",
+      
       flexDirection: "column",
       gap: "10px",
       width: "100%",
@@ -29,10 +31,10 @@ const VerdictsPage = () => (
         <img
           src={rmklogo}
           alt="RMK Logo"
-          style={{ width: "40%", height: "auto" }}
+          style={{ width: "45%", height: "auto", border:"1px solid black" }}
         />
       </div>
-      <h2 style={{textAlign: "end",color:"rgba(14, 73, 71, 1)" }}>
+      <h2 style={{textAlign: "end",color:"rgba(14, 73, 71, 1)", fontSize:"15px" }}>
         INFORMATION TECHNOLOGY
       </h2>
     </div>
