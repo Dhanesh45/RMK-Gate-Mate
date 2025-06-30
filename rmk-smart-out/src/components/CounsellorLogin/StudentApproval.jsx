@@ -46,12 +46,12 @@ const StudentApproval = () => {
         {sno:39,regno:111723203039,name:"Jaishree",},
         {sno:40,regno:111723203040,name:"Jaisurya",},
         {sno:41,regno:111723203121,name:"Ragul",},
-        {sno:42,regno:111723203124,name:"Manoj",}
+        {sno:42,regno:111723203124,name:"Manoj",}   
       ]
 
-  return (
+  return (  
     <div style={{display:"flex"}}>
-        <Sidebar />
+        <div style={{width:"15%",height:"100vh"}}></div>
         <div style={{width:"85%",height:"100vh",backgroundColor:"rgba(238, 238, 238, 0.5)"}}>
             <div style={{display:"flex",justifyContent:"space-between",}}>
                 <img src={rmklogo} width="9%" height="9%" style={{padding:"0.5%",}}/>

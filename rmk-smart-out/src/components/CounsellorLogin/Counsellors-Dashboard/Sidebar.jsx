@@ -3,7 +3,6 @@ import { MdSpaceDashboard ,MdOutlineAppRegistration } from "react-icons/md";
 import { BsListCheck } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import rmklogo from "../../assets/LandingPageimg/rmklogo.png"
 import { useState } from "react";
 import styled from 'styled-components';
 

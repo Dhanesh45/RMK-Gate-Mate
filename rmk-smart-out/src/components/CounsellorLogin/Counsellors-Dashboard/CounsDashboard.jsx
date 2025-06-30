@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../Sidebar';
+import Sidebar from './Sidebar';
 import rmklogo from "../../../assets/LandingPageimg/rmklogo.png"
 import dashphoto from "../../../assets/CounsellorLoginimg/Greenforest.jpg"
 import profilephoto from "../../../assets/CounsellorLoginimg/Counsprofile.jpg"
@@ -12,7 +12,7 @@ const CounsDashboard = () => {
 
   return (
     <div style={{display:"flex",height:"100vh",width:"100%"}}>
-        <Sidebar />
+        <div style={{width:"15%",height:"100vh"}}></div>
         <div style={{width:"85%",height:"100%",backgroundColor:"rgba(238, 238, 238, 0.5)",}}>
             {/* Header */}
             <div style={{display:"flex",justifyContent:"space-between",}}>
