@@ -19,7 +19,7 @@ const OfficeAssistantLoginPage = () => {
 
                 {/* input feilds */}
                 <div style={{padding:"3% 5% 5% 5%"}}>
-                    
+            
                     <div style={{paddingBottom:"4%"}}>
                       <p style={{fontSize:"20px",fontWeight:"600",paddingBottom:"0.8%",color:"rgba(14, 73, 71, 1)"}}>EMAIL</p>
                       <input type="email" style={{width:"97%",padding:"1.25%",borderRadius:"5px",border:"1px solid rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"500"}}/>

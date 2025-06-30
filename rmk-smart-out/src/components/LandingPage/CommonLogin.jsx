@@ -21,12 +21,12 @@ const CommonLogin = () => {
           </div>
           <div style={{textAlign:"center",display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:"30%",padding:"0% 20% 0% 20%"}}>
             
-            <button onClick={()=>navigate("/StudentLogin")} className={butStyle}>STUDENT</button>
-            <button className={butStyle}>COUNSELLOR</button>
-            <button className={butStyle}>HOD</button>
-            <button className={butStyle}>PRINCIPAL</button>
-            <button className={butStyle}>YEAR COORDINATOR</button>
-            <button className={butStyle}>OFFICE ASSISTANT</button>
+            <button onClick={()=>navigate("/StudentLoginPage")} className={butStyle}>STUDENT</button>
+            <button onClick={()=>navigate("/CounsellorLoginPage")} className={butStyle}>COUNSELLOR</button>
+            <button onClick={()=>navigate("/HodLoginPage")} className={butStyle}>HOD</button>
+            <button onClick={()=>navigate("/HodLoginPage")} className={butStyle}>PRINCIPAL</button>
+            <button onClick={()=>navigate("/YearCoordinatorLoginPage")} className={butStyle}>YEAR COORDINATOR</button>
+            <button onClick={()=>navigate("/OfficeAssistantLoginPage")} className={butStyle}>OFFICE ASSISTANT</button>
           </div>
         </div>
       
