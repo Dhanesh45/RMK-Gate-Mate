@@ -3,7 +3,7 @@ import { MdSpaceDashboard ,MdOutlineAppRegistration } from "react-icons/md";
 import { BsListCheck } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import { useState } from "react";
+
 import styled from 'styled-components';
 
 const Sidebar = () => {
@@ -16,19 +16,18 @@ const Sidebar = () => {
     
   ]
 
-  const HoverLi=styled.li 
-  `
-    display:flex;
-    gap:5px;
-    list-style:none;
-    padding:5%;
-    &:hover {
-      background-color:rgba(14, 73, 71, 1);
-      color:white;
-    }
+const HoverLi = styled.li`
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  padding: 5%;
+  &:hover {
+    background-color: rgba(14, 73, 71, 1);
+    color: white;
   }
 `;
-  const [click,setClick]=useState(false);
+
+  
 
   return (
     <div style={{width:"15%",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between",borderRadius:"0% 15px 15px 0%",backgroundColor:"white"}}>
