@@ -35,7 +35,7 @@ const Outpassbar = () => {
       justifyContent: 'space-evenly',
       padding: '20px',
       alignItems: 'center',
-      height: '55%',
+      height: '65%',
       flexWrap: 'wrap',
     }}>
       
@@ -55,7 +55,7 @@ const Outpassbar = () => {
       </div>
 
       {/* Summary Table */}
-      <div style={{ width: '25%', minWidth: '280px', marginTop:"-25%" }}>
+      <div style={{ width: '25%', minWidth: '280px', marginTop:"-25%",height:"65%" }}>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
             <tr>
