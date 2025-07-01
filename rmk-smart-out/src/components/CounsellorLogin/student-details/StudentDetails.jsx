@@ -1,5 +1,6 @@
 import RmkLogo from '../../../assets/LandingPageimg/rmklogo.png'
 import { useState } from 'react';
+import "./StudentDetails.css"
 
 const StudentDetails = () => {
     const [students, setStudents] = useState([]);
@@ -25,9 +26,7 @@ const StudentDetails = () => {
     }
     return (
 
-        <div className="container1">
-            <div className="sidebar">
-            </div>
+        
             <div className="innerframe">
                 <div className="container2">
                     <img src={RmkLogo} width="9%" height="9%" alt="rmklogo" style={{ padding: "0.5%" }}></img>
@@ -80,7 +79,7 @@ const StudentDetails = () => {
                 </div>
 
             </div>
-        </div >
+        
 
     )
 }

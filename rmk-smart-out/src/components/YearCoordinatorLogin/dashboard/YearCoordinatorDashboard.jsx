@@ -1,18 +1,13 @@
-import React from 'react'
-
 import rmklogo from "../../../assets/LandingPageimg/rmklogo.png"
 import dashphoto from "../../../assets/dashboardimg/Greenforest.jpg"
 import profilephoto from "../../../assets/dashboardimg/Counsprofile.jpg"
 import AttendanceChart from './AttendanceChart';
 import Outpassbar from './Outpassbar';
 
-
 const YearCoordinatorDashboard= () => {
-   
 
   return (
-    <div style={{display:"flex",height:"100vh",width:"100%"}}>
-        <div className='side'></div>
+    
         <div style={{width:"85%",height:"100%",backgroundColor:"rgba(238, 238, 238, 0.5)",}}>
             {/* Header */}
             <div style={{display:"flex",justifyContent:"space-between",}}>
@@ -48,9 +43,7 @@ const YearCoordinatorDashboard= () => {
                     <AttendanceChart />
                 </div>
             </div>
-            
         </div>
-    </div>
   )
 }
 

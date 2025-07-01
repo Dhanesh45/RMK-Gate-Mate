@@ -11,8 +11,8 @@ const CounsDashboard = () => {
    
 
   return (
-    <div style={{display:"flex",height:"100vh",width:"100%"}}>
-        <div style={{width:"15%",height:"100vh"}}></div>
+    
+        
         <div style={{width:"85%",height:"100%",backgroundColor:"rgba(238, 238, 238, 0.5)",}}>
             {/* Header */}
             <div style={{display:"flex",justifyContent:"space-between",}}>
@@ -50,7 +50,7 @@ const CounsDashboard = () => {
             </div>
             
         </div>
-    </div>
+
   )
 }
 

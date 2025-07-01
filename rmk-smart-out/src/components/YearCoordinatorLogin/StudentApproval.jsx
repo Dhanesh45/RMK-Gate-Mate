@@ -107,4 +107,4 @@ const StudentApproval = () => {
   )
 }
 
-export default StudentApproval
+export default StudentApproval;

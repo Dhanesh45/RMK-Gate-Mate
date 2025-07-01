@@ -16,15 +16,15 @@ const data = [
 ];
 
 const VerdictChart = () => (
-  <div style={{ flex: 2, backgroundColor: "white", padding: "5px", borderRadius: "10px" }}>
+  <div style={{ flex: 2, backgroundColor: "white", padding: "5px", borderRadius: "10px", width:"75%",height:"100%" }}>
     <h4>Number of Student</h4>
-    <ResponsiveContainer width="100%" height={170}>
+    <ResponsiveContainer width="100%" height={200}>
       <BarChart data={data}>
         <XAxis dataKey="month" />
         <YAxis />
         <Tooltip />
-        <Bar dataKey="approved" fill="#0e4947" />
-        <Bar dataKey="rejected" fill="#ccc" />
+        <Bar dataKey="approved" fill="#0e4947" barSize={17}/>
+        <Bar dataKey="rejected" fill="#ccc" barSize={15}/>
       </BarChart>
     </ResponsiveContainer>
   </div>
