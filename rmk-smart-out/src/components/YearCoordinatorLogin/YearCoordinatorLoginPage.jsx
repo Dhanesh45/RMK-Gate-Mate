@@ -15,7 +15,7 @@ const YearCoordinatorLoginPage = () => {
             </div>
 
             {/* Form part */}
-            <div style={{width:"50%",height:"100%",padding:"2% 0%",overflow:"auto"}}>
+            <div className="form-scroll" style={{width:"50%",height:"100%",padding:"2% 0%",overflow:"auto"}}>
                 <h1 style={{textAlign:"center",fontWeight:"800",fontSize:"40px",color:"rgba(14, 73, 71, 1)",paddingBottom:"3%"}}>YEAR COORDINATOR LOGIN</h1>
                 <p  style={{textAlign:"center",fontSize:"20px",paddingBottom:"1%",fontWeight:"600",color:"rgba(17,73,71,1)"}}>Welcome to Year Coordinator details Login to access your account</p>
 
