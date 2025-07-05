@@ -70,7 +70,7 @@ const YearCoordinatorLoginPage = () => {
       }
 
       .form-scroll::-webkit-scrollbar-thumb {
-        background-color: rgba(17, 73, 71, 0.6);
+        background-color: rgba(17, 73, 71, 0.5);
         border-radius: 10px;
       }
 
