@@ -1,7 +1,10 @@
 import { useState } from "react"
 import loginimg from "../../assets/StudentLoginimg/loginimg.jpg"
+import { useNavigate } from "react-router-dom";
 
 const HodLoginPage = () => {
+
+  const navigate=useNavigate();
 
   const [isChecked,setIsChecked]= useState(false);
   return (
@@ -49,7 +52,7 @@ const HodLoginPage = () => {
                     </div>
 
                     <div style={{textAlign:"center"}}>
-                      <button style={{padding:"2% 30%",borderRadius:"30px",fontSize:"20px",fontWeight:"600",color:"white",backgroundColor:"rgba(17,73,71,17)"}}>
+                      <button style={{padding:"2% 30%",borderRadius:"30px",fontSize:"20px",fontWeight:"600",color:"white",backgroundColor:"rgba(17,73,71,17)"}} onClick={()=>navigate("/HodDashboard")}>
                         LOGIN
                       </button>
                     </div>

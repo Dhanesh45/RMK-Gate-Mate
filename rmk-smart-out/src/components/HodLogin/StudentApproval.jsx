@@ -1,7 +1,4 @@
-
 import rmklogo from "../../assets/LandingPageimg/rmklogo.png"
-
-
 
 const StudentApproval = () => {
     const students=[
@@ -59,7 +56,7 @@ const StudentApproval = () => {
             <div>
                  <h1 style={{color:"rgba(14, 73, 71, 1)",fontSize:"20px",fontWeight:"bolder",textAlign:"center",}}>STUDENT APPROVAL LIST</h1>
                 <div style={{ width: "100%", height: "100%", textAlign: "center" }}>
-                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "90%",height:"82vh",overflowY:"auto", margin: "1% auto" ,border:"8px solid rgba(217, 217, 217,1)",borderRadius:"10px"}}>
+                    <div style={{ backgroundColor: "rgba(217, 217, 217, 1)", width: "90%",height:"73vh",overflowY:"auto", margin: "1% auto" ,border:"8px solid rgba(217, 217, 217,1)",borderRadius:"10px"}}>
                         <table style={{ borderCollapse: "collapse", width: "100%" ,borderRadius:"20px"}}>
                         <thead>
                         <tr style={{borderBottom:"8px solid rgba(217, 217, 217, 1)"}}>
@@ -101,6 +98,10 @@ const StudentApproval = () => {
                         </table>
                     </div>
                     </div>
+            </div>
+            <div style={{width:"100%",display:"flex",justifyContent:"space-between",padding:"0.7% 5% 0% 5%"}}>
+                <button style={{padding:"1% 3%",backgroundColor:"rgba(197, 9, 12, 1)",color:"white",fontWeight:"bold",fontSize:"14px",borderRadius:"25px"}}>REJECT ALL</button>
+                <button style={{padding:"1% 3%",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",fontWeight:"bold",fontSize:"14px",borderRadius:"25px"}}>APPROVE ALL</button>
             </div>
         </div>
     

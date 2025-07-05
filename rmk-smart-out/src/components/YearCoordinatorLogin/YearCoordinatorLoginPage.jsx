@@ -1,9 +1,11 @@
 import { useState } from "react"
 import loginimg from "../../assets/StudentLoginimg/loginimg.jpg"
+import { useNavigate } from "react-router-dom";
 
 const YearCoordinatorLoginPage = () => {
 
   const [isChecked,setIsChecked]= useState(false);
+  const navigate=useNavigate()
   return (
     <div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center",backgroundImage: 'linear-gradient(to right, rgba(27, 180, 109, 1), rgba(11, 78, 47, 1)',  }}>
         <div style={{width:"92%",height:"88%",backgroundColor:"white",borderRadius:"30px",boxShadow:"2px 2px 40px  rgba(0, 0, 0, 0.9 )",display:"flex"}}>
@@ -49,7 +51,8 @@ const YearCoordinatorLoginPage = () => {
                     </div>
 
                     <div style={{textAlign:"center"}}>
-                      <button style={{padding:"2% 30%",borderRadius:"30px",fontSize:"20px",fontWeight:"600",color:"white",backgroundColor:"rgba(17,73,71,17)"}}>
+                      <button style={{padding:"2% 30%",borderRadius:"30px",fontSize:"20px",fontWeight:"600",color:"white",backgroundColor:"rgba(17,73,71,17)"}}
+                      onClick={()=>navigate("/YearCoordinatorDashboard")}>
                         LOGIN
                       </button>
                     </div>
