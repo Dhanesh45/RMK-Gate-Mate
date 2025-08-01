@@ -1,0 +1,109 @@
+.container1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+}
+
+.innerframe {
+    width: 85%;
+    height: 100vh;
+    background-color:rgba(238, 238, 238, 0.5);
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dept1 {
+    color: #0E4947;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 1.5% 0% 0% 0%;
+}
+
+.title {
+    text-align: center;
+}
+
+.title1 {
+    color: rgba(14, 73, 71, 1);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.container3 {
+    margin-top: 0.5%;
+    box-shadow: 1px 1px 1px 1px rgba(217, 217, 217, 1);
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 10px;
+    width: 90%;
+    height: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.input {
+    display: flex;
+    padding:1%;
+    column-gap: 3%;
+    margin:0 auto;
+
+}
+
+.input input {
+    width: 23%;
+    height:5vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px white;
+    border: none;
+    padding-left: 0.5%;
+    font-weight: bold;
+}
+
+.input button {
+    width: 23%;
+    height: 5vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(14, 73, 71, 1);
+    border: none;
+    color: white;
+    background-color:rgba(14, 73, 71, 1);
+    font-weight: bold;
+}
+
+.container4 {
+    box-shadow: 1px 1px 1px 1px rgba(217, 217, 217, 1);
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 10px;
+    width: 90%;
+    height: 70vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+.container5{
+    background-color: white;
+    margin:0 auto;
+    width:99%;
+    border-radius: 5px;
+}
+.table1{
+    width:100%;
+    border-collapse: collapse;
+}
+.table1 th,td{
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.table1 th{
+    font-weight: bold;
+}

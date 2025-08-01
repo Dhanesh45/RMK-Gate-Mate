@@ -1,13 +1,13 @@
 import React from 'react'
-import Sidebar from './Sidebar';
+import Sidebar from '../Sidebar';
 import rmklogo from "../../../assets/LandingPageimg/rmklogo.png"
-import dashphoto from "../../../assets/dashboardimg/Greenforest.jpg"
-import profilephoto from "../../../assets/dashboardimg/Counsprofile.jpg"
+import dashphoto from "../../../assets/CounsellorLoginimg/Greenforest.jpg"
+import profilephoto from "../../../assets/CounsellorLoginimg/Counsprofile.jpg"
 import AttendanceChart from './AttendanceChart';
-import Outpassbar from './Outpassbar';
+import OutpassChart from './OutpassChart';
 
 
-const Dashboardhead = () => {
+const CounsDashboard = () => {
    
 
   return (
@@ -29,22 +29,22 @@ const Dashboardhead = () => {
                     <div style={{position:"absolute",width:"10%",height:"35%",top:"20%",left:"10%"}}>
                         <img src={profilephoto} alt="" style={{width:"100%",height:"100%",borderRadius:"50%",border:"10px solid white"}}/>
                     </div>
-                    <div style={{width:"100%",height:"50%",padding:"5% 0% 0% 8%"}}>
-                        <h1 style={{paddingBottom:"0.75%",fontSize:"25px",fontWeight:"550"}}>YEAR CO ORDINATOR NAME</h1>
-                        <p  style={{paddingBottom:"0.75%",fontSize:"15px",color:"gray"}}>YR CO@gmail.com</p>
-                        <b><p  style={{paddingBottom:"0.75%",fontSize:"15px"}}>Number of Students: 125   |   Degree : B.Tech - Information Technology  |   College :R.M.K. Group of Institutions</p>
-                   </b> </div>
+                    <div style={{width:"100%",height:"30%",padding:"5% 0% 0% 8%"}}>
+                        <h1 style={{paddingBottom:"0.75%",fontSize:"25px",fontWeight:"550"}}>COUNSELLOR NAME</h1>
+                        <p  style={{paddingBottom:"0.75%",fontSize:"15px",color:"gray"}}>counsellor@gmail.com</p>
+                        <p  style={{paddingBottom:"0.75%",fontSize:"15px"}}>Number of Students: 21   |   Degree : B.Tech - Information Technology  |   College :R.M.K. Group of Institutions</p>
+                    </div>
                 </div>
             </div>
 
             {/* Visulaization */}
             <div style={{width:"100%",height:"35%",display:"flex",justifyContent:"space-between"}}>
                 <div style={{backgroundColor:"white",borderRadius:"20px",width:"65.5%",height:"95%",margin:"2% 0% 1% 3.5%"}}>
-                    <h4 style={{padding:"1% 0% 0% 3%"}}>OUTPASS TRACKER</h4>
-                    <Outpassbar />
+                    <h4 style={{padding:"2% 0% 0% 2%",fontWeight:"bold"}}>OUTPASS TRACKER</h4>
+                    <OutpassChart />
                 </div>
                 <div style={{backgroundColor:"white",borderRadius:"20px",width:"25%",height:"95%",margin:"2% 3.5% 1% 0%",}}>
-                    <h4 style={{padding:"5% 0% 0% 5%"}}>ATTENDANCE</h4>
+                    <h4 style={{padding:"4% 0% 0% 5%",fontWeight:"bold"}}>ATTENDANCE</h4>
                     <AttendanceChart />
                 </div>
             </div>
@@ -54,4 +54,4 @@ const Dashboardhead = () => {
   )
 }
 
-export default Dashboardhead;
+export default CounsDashboard;

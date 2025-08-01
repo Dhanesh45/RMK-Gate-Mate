@@ -3,19 +3,24 @@ import { MdSpaceDashboard ,MdOutlineAppRegistration } from "react-icons/md";
 import { BsListCheck } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
+<<<<<<< HEAD:rmk-smart-out/src/components/YearCoordinatorLogin/dashboard/Sidebar.jsx
 
+=======
+import rmklogo from "../../assets/LandingPageimg/rmklogo.png"
+import { useState } from "react";
+>>>>>>> 9d28ec69aa51c43888c66be1ab471176a0705d75:rmk-smart-out/src/components/CounsellorLogin/Sidebar.jsx
 import styled from 'styled-components';
 
 const Sidebar = () => {
-  const sidebarContents=
-  [
-  
+  const sidebarContents=[
     {icon:<MdSpaceDashboard/>,name:"DASHBOARD"},
+    {icon:<BiSolidUserDetail/>,name:"STUDENTS DETAILS"},
     {icon:<MdOutlineAppRegistration/>,name:"APPROVAL LIST"},
     {icon:<BiBarChartSquare/>,name:"VERDICTS"},
-    
+    {icon:<BsListCheck />,name:"ATTENDANCE"},
   ]
 
+<<<<<<< HEAD:rmk-smart-out/src/components/YearCoordinatorLogin/dashboard/Sidebar.jsx
 const HoverLi = styled.li`
   display: flex;
   gap: 5px;
@@ -24,6 +29,17 @@ const HoverLi = styled.li`
   &:hover {
     background-color: rgba(14, 73, 71, 1);
     color: white;
+=======
+  const HoverLi=styled.li `
+    display:flex;
+    gap:5px;
+    list-style:none;
+    padding:5%;
+    &:hover{
+      background-color:rgba(14, 73, 71, 1);
+      color:white;
+    }
+>>>>>>> 9d28ec69aa51c43888c66be1ab471176a0705d75:rmk-smart-out/src/components/CounsellorLogin/Sidebar.jsx
   }
 `;
 
@@ -33,7 +49,7 @@ const HoverLi = styled.li`
     <div style={{width:"15%",height:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between",borderRadius:"0% 15px 15px 0%",backgroundColor:"white"}}>
       <div>
         <div>
-        <h3 style={{padding:"5% 0% 10% 5%"}}>YEAR CO ORDINATOR</h3>
+        <h3 style={{padding:"5% 0% 10% 5%"}}>COUNSELLOR</h3>
         </div>
         <ul style={{}}>
         {
@@ -45,7 +61,6 @@ const HoverLi = styled.li`
               </HoverLi>
           )})
         }
-
         </ul>
       </div>
       <div>
@@ -53,7 +68,7 @@ const HoverLi = styled.li`
           <div>
             <CgProfile />
           </div> 
-          <h5>YEAR COORDINATOR</h5>
+          <h5>COUNSELLOR</h5>
         </div>
         <button style={{margin:"10%",width:"80%",border:"none",backgroundColor:"rgba(14, 73, 71, 1)",color:"white",borderRadius:"20px",fontSize:'15px',fontWeight:"bold",padding:'2%',display:"flex",gap:"10px",justifyContent:"center",alignItems:"center"}}>
           <IoIosLogOut />

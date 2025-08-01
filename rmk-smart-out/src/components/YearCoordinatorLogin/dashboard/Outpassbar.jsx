@@ -14,15 +14,15 @@ const sum1=chartData.reduce((tot,i)=>tot+i.pending,0)
 const sum2=chartData.reduce((tot,i)=>tot+i.approved,0)
 const sum3=chartData.reduce((tot,i)=>tot+i.rejected,0)
 const summaryData = [
-  { name: 'Pending', value: sum1, color: '#00BDAE' },
-  { name: 'No of approved', value: sum2, color: '#7070F3' },
-  { name: 'No of rejected', value: sum3, color: '#F858B0' },
+  { name: 'Pending', value: sum1, color: '#0E4947' },
+  { name: 'No of approved', value: sum2, color: '#3CA473' },
+  { name: 'No of rejected', value: sum3, color: '#A4E4B3' },
 ];
 
 const COLORS = {
-  pending: '#00BDAE',
-  approved: '#7070F3',
-  rejected: '#F858B0',
+  pending: '#0E4947',
+  approved: '#3CA473',
+  rejected: '#A4E4B3',
 };
 
 const Outpassbar = () => {
@@ -43,8 +43,8 @@ const Outpassbar = () => {
       <div style={{ width: '60%', height: '130%', marginBottom:"20%",marginLeft:'-10%'}}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData}>
-            <XAxis dataKey="name" />
-            <YAxis />
+            <XAxis dataKey="name" style={{fontSize:"12px"}} />
+            <YAxis style={{fontSize:"12px"}} />
             <Tooltip />
             <Legend verticalAlign="bottom" height={10} iconType="circle" />
             <Bar dataKey="pending" fill={COLORS.pending} barSize={12} radius={[3, 3, 0, 0]} />
